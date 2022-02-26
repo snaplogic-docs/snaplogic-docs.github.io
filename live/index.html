@@ -66,39 +66,21 @@
             <li class="topicref topichead">Administration and Configuration</li>
             <li class="topicref topichead">SnapLogic API Management</li>
             <li class="topicref"><a href="public-apis/public-apis.html">SnapLogic Public APIs</a><ul>
-                  <li class="topicref topichead">Activity APIs
-                     <ul>
+                  <li class="topicref"><a href="public-apis/apis-activity.html">Activity APIs</a><ul>
                         <li class="topicref"><a href="public-apis/get-activities-org.html">GET /activities/{org}</a></li>
                      </ul>
                   </li>
-                  <li class="topicref topichead">Asset ACL APIs
-                     <ul>
+                  <li class="topicref"><a href="public-apis/apis-asset.html">Asset APIs</a><ul>
                         <li class="topicref"><a href="public-apis/post-assetapi-acl-projpath.html">POST /assetapi/acl/{project_path}</a></li>
                         <li class="topicref"><a href="public-apis/get-assetapi-acl-projpath.html">GET /assetapi/acl/{project_path}</a></li>
                         <li class="topicref"><a href="public-apis/delete-assetapi-acl-projpath.html">DELETE /assetapi/acl/{project_path}</a></li>
                      </ul>
                   </li>
-                  <li class="topicref topichead">Project APIs
-                     <ul>
-                        <li class="topicref"><a href="public-apis/post-project-projpath.html">POST /project/{project_or_space_path}</a></li>
-                        <li class="topicref"><a href="public-apis/put-project-projpath.html">PUT /project/{project_or_space_path}</a></li>
-                     </ul>
-                  </li>
-                  <li class="topicref topichead">GitHub APIs
-                     <ul>
-                        <li class="topicref"><a href="public-apis/post-project-checkout-projpath.html">POST /project/checkout/{project_path}</a></li>
-                        <li class="topicref"><a href="public-apis/post-project-pull-projpath.html">POST /project/pull/{project_path}</a></li>
-                        <li class="topicref"><a href="public-apis/post-ghwebhook.html">POST /ghwebhook</a></li>
-                        <li class="topicref"><a href="public-apis/get-repo-status-projpath.html">GET /repo-status/{project_path}</a></li>
-                     </ul>
-                  </li>
-                  <li class="topicref topichead">Log APIs
-                     <ul>
+                  <li class="topicref"><a href="public-apis/apis-log.html">Log APIs</a><ul>
                         <li class="topicref"><a href="public-apis/get-log-org.html">GET /log/{org}</a></li>
                      </ul>
                   </li>
-                  <li class="topicref topichead">Pipeline Monitoring APIs
-                     <ul>
+                  <li class="topicref"><a href="public-apis/apis-pipeline.html">Pipeline APIs</a><ul>
                         <li class="topicref"><a href="public-apis/get-runtime-org.html">GET /runtime/{org}</a></li>
                         <li class="topicref"><a href="public-apis/get-runtime-org-ruuid.html">GET /runtime/{org}/{ruuid}</a></li>
                         <li class="topicref"><a href="public-apis/get-runtime-apistats-org.html">GET /runtime/api-stats/{org}</a></li>
@@ -108,34 +90,28 @@
                         <li class="topicref"><a href="public-apis/post-runtime-stop-org-ruuid.html">POST /runtime/stop/{org}/{ruuid}</a></li>
                      </ul>
                   </li>
-                  <li class="topicref topichead">Project Migration APIs
-                     <ul>
+                  <li class="topicref"><a href="public-apis/apis-project.html">Project APIs</a><ul>
+                        <li class="topicref"><a href="public-apis/post-project-projpath.html">POST /project/{project_or_space_path}</a></li>
+                        <li class="topicref"><a href="public-apis/put-project-projpath.html">PUT /project/{project_or_space_path}</a></li>
+                        <li class="topicref"><a href="public-apis/post-project-checkout-projpath.html">POST /project/checkout/{project_path}</a></li>
+                        <li class="topicref"><a href="public-apis/post-project-pull-projpath.html">POST /project/pull/{project_path}</a></li>
+                        <li class="topicref"><a href="public-apis/get-repo-status-projpath.html">GET /repo-status/{project_path}</a></li>
                         <li class="topicref"><a href="public-apis/post-project-migrate-projpath.html">POST /project/migrate/{project_path}</a></li>
                         <li class="topicref"><a href="public-apis/get-migrate-status-token.html">GET /migrate/{status_token}</a></li>
                      </ul>
                   </li>
-                  <li class="topicref topichead">Snaplex Management APIs
-                     <ul>
+                  <li class="topicref"><a href="public-apis/apis-snaplex.html">Snaplex APIs</a><ul>
                         <li class="topicref"><a href="public-apis/post-snaplex-restart-plexpath-hostname.html">POST /snaplex/restart/{plex_path}/{hostname}</a></li>
                         <li class="topicref"><a href="public-apis/post-snaplex-maintenance-plexpath-hostname.html">POST /snaplex/maintenance/{plex_path}/{hostname}</a></li>
                         <li class="topicref"><a href="public-apis/get-snaplex-config-plexpath.html">GET /snaplex/config/{plex_path}</a></li>
-                     </ul>
-                  </li>
-                  <li class="topicref topichead">Snaplex Monitoring APIs
-                     <ul>
                         <li class="topicref"><a href="public-apis/get-snaplex-org.html">GET /snaplex/{org}</a></li>
-                     </ul>
-                  </li>
-                  <li class="topicref topichead">Snaplex Version APIs
-                     <ul>
                         <li class="topicref"><a href="public-apis/post-snaplex-version-plexpath.html">POST /snaplex/version/{plex_path}</a></li>
                         <li class="topicref"><a href="public-apis/post-snaplex-version-latest-plexpath.html">POST /snaplex/version/latest/{plex_path}</a></li>
                         <li class="topicref"><a href="public-apis/get-snaplex-version.html">GET /snaplex/version</a></li>
                         <li class="topicref"><a href="public-apis/get-snaplex-version-latest.html">GET /snaplex/version/latest</a></li>
                      </ul>
                   </li>
-                  <li class="topicref topichead">User and Group Management APIs
-                     <ul>
+                  <li class="topicref"><a href="public-apis/apis-user-and-group.html">User and Group APIs</a><ul>
                         <li class="topicref"><a href="public-apis/post-users.html">POST /users</a></li>
                         <li class="topicref"><a href="public-apis/get-users-email.html">GET /users/{email}</a></li>
                         <li class="topicref"><a href="public-apis/put-users-email.html">PUT /users/{email}</a></li>
