@@ -41,6 +41,11 @@
                         </li>
                      </ul>
                   </li>
+                  <li class="topicref topichead">API Manager
+                     <ul>
+                        <li class="topicref"><a href="apim/tryapi-cors-settings.html">Setting Up a CORS Restriction for Try It Out</a></li>
+                     </ul>
+                  </li>
                   <li class="topicref topichead">Manager
                      <ul>
                         <li class="topicref"><a href="manager/manager-features.html">SnapLogic Features for Orgs</a></li>
@@ -67,61 +72,61 @@
             <li class="topicref topichead">SnapLogic API Management</li>
             <li class="topicref"><a href="public-apis/public-apis.html">SnapLogic Public APIs</a><ul>
                   <li class="topicref"><a href="public-apis/apis-activity.html">Activity APIs</a><ul>
-                        <li class="topicref"><a href="public-apis/get-activities-org.html">GET /activities/{org}</a></li>
+                        <li class="topicref"><a href="public-apis/get-activities-org.html">Retrieve Activities in Org</a></li>
                      </ul>
                   </li>
                   <li class="topicref"><a href="public-apis/apis-asset.html">Asset APIs</a><ul>
-                        <li class="topicref"><a href="public-apis/post-assetapi-acl-projpath.html">POST /assetapi/acl/{project_path}</a></li>
-                        <li class="topicref"><a href="public-apis/get-assetapi-acl-projpath.html">GET /assetapi/acl/{project_path}</a></li>
-                        <li class="topicref"><a href="public-apis/delete-assetapi-acl-projpath.html">DELETE /assetapi/acl/{project_path}</a></li>
+                        <li class="topicref"><a href="public-apis/post-assetapi-acl-projpath.html">Grant a User or Group Access to a Project</a></li>
+                        <li class="topicref"><a href="public-apis/get-assetapi-acl-projpath.html">Retrieve Privileges of Current User</a></li>
+                        <li class="topicref"><a href="public-apis/delete-assetapi-acl-projpath.html">Revoke All Project Access from a User or Group</a></li>
+                        <li class="topicref"><a href="public-apis/post-assetapi-project-projpath.html">Create New Project or Project Space</a></li>
+                        <li class="topicref"><a href="public-apis/put-assetapi-project-projpath.html">Rename a Project or Project Space</a></li>
                      </ul>
                   </li>
                   <li class="topicref"><a href="public-apis/apis-log.html">Log APIs</a><ul>
-                        <li class="topicref"><a href="public-apis/get-log-org.html">GET /log/{org}</a></li>
+                        <li class="topicref"><a href="public-apis/get-log-org.html">Retrieve Pipeline Logs</a></li>
                      </ul>
                   </li>
-                  <li class="topicref"><a href="public-apis/apis-pipeline.html">Pipeline APIs</a><ul>
-                        <li class="topicref"><a href="public-apis/get-runtime-org.html">GET /runtime/{org}</a></li>
-                        <li class="topicref"><a href="public-apis/get-runtime-org-ruuid.html">GET /runtime/{org}/{ruuid}</a></li>
-                        <li class="topicref"><a href="public-apis/get-runtime-apistats-org.html">GET /runtime/api-stats/{org}</a></li>
-                        <li class="topicref"><a href="public-apis/get-runtime-apistats-org-daily.html">GET /runtime/api-stats/{org}/daily</a></li>
-                        <li class="topicref"><a href="public-apis/get-runtime-apistats-org-concurrent.html">GET /runtime/api-stats/{org}/concurrent</a></li>
-                        <li class="topicref"><a href="public-apis/post-runtime-start-org-ruuid.html">POST /runtime/start/{org}/{ruuid}</a></li>
-                        <li class="topicref"><a href="public-apis/post-runtime-stop-org-ruuid.html">POST /runtime/stop/{org}/{ruuid}</a></li>
+                  <li class="topicref"><a href="public-apis/apis-pipeline-task.html">Pipeline and Task APIs</a><ul>
+                        <li class="topicref"><a href="public-apis/get-runtime-org.html">Retrieve Info About Tasks Matching a Filter</a></li>
+                        <li class="topicref"><a href="public-apis/get-runtime-org-ruuid.html">Retrieve Info About a Task</a></li>
+                        <li class="topicref"><a href="public-apis/get-runtime-apistats-org.html">Retrieve Concurrent and Daily Task Metrics</a></li>
+                        <li class="topicref"><a href="public-apis/get-runtime-apistats-org-daily.html">Retrieve Daily Task Metrics</a></li>
+                        <li class="topicref"><a href="public-apis/get-runtime-apistats-org-concurrent.html">Retrieve Concurrent Task Metrics</a></li>
+                        <li class="topicref"><a href="public-apis/post-runtime-start-org-ruuid.html">Resume a Resumable Task</a></li>
+                        <li class="topicref"><a href="public-apis/post-runtime-stop-org-ruuid.html">Stop a Task</a></li>
                      </ul>
                   </li>
                   <li class="topicref"><a href="public-apis/apis-project.html">Project APIs</a><ul>
-                        <li class="topicref"><a href="public-apis/post-project-projpath.html">POST /project/{project_or_space_path}</a></li>
-                        <li class="topicref"><a href="public-apis/put-project-projpath.html">PUT /project/{project_or_space_path}</a></li>
-                        <li class="topicref"><a href="public-apis/post-project-checkout-projpath.html">POST /project/checkout/{project_path}</a></li>
-                        <li class="topicref"><a href="public-apis/post-project-pull-projpath.html">POST /project/pull/{project_path}</a></li>
-                        <li class="topicref"><a href="public-apis/get-repo-status-projpath.html">GET /repo-status/{project_path}</a></li>
-                        <li class="topicref"><a href="public-apis/post-project-migrate-projpath.html">POST /project/migrate/{project_path}</a></li>
-                        <li class="topicref"><a href="public-apis/get-migrate-status-token.html">GET /migrate/{status_token}</a></li>
+                        <li class="topicref"><a href="public-apis/post-project-checkout-projpath.html">Check Out Project Files from GitHub</a></li>
+                        <li class="topicref"><a href="public-apis/post-project-pull-projpath.html">Pull the Latest Project Files from GitHub</a></li>
+                        <li class="topicref"><a href="public-apis/get-repo-status-projpath.html">Retrieve the Status of the GitHub Repository</a></li>
+                        <li class="topicref"><a href="public-apis/post-project-migrate-projpath.html">Migrate a Project to Another Org</a></li>
+                        <li class="topicref"><a href="public-apis/get-migrate-status-token.html">Retrieve the Status of a Migration</a></li>
                      </ul>
                   </li>
                   <li class="topicref"><a href="public-apis/apis-snaplex.html">Snaplex APIs</a><ul>
-                        <li class="topicref"><a href="public-apis/post-snaplex-restart-plexpath-hostname.html">POST /snaplex/restart/{plex_path}/{hostname}</a></li>
-                        <li class="topicref"><a href="public-apis/post-snaplex-maintenance-plexpath-hostname.html">POST /snaplex/maintenance/{plex_path}/{hostname}</a></li>
-                        <li class="topicref"><a href="public-apis/get-snaplex-config-plexpath.html">GET /snaplex/config/{plex_path}</a></li>
-                        <li class="topicref"><a href="public-apis/get-snaplex-org.html">GET /snaplex/{org}</a></li>
-                        <li class="topicref"><a href="public-apis/post-snaplex-version-plexpath.html">POST /snaplex/version/{plex_path}</a></li>
-                        <li class="topicref"><a href="public-apis/post-snaplex-version-latest-plexpath.html">POST /snaplex/version/latest/{plex_path}</a></li>
-                        <li class="topicref"><a href="public-apis/get-snaplex-version.html">GET /snaplex/version</a></li>
-                        <li class="topicref"><a href="public-apis/get-snaplex-version-latest.html">GET /snaplex/version/latest</a></li>
+                        <li class="topicref"><a href="public-apis/post-snaplex-restart-plexpath-hostname.html">Request a Restart of a Node</a></li>
+                        <li class="topicref"><a href="public-apis/post-snaplex-maintenance-plexpath-hostname.html">Switch a Node to Maintenance Mode</a></li>
+                        <li class="topicref"><a href="public-apis/get-snaplex-config-plexpath.html">Retrieve Config Info for a Groundplex</a></li>
+                        <li class="topicref"><a href="public-apis/get-snaplex-org.html">Retrieve Info About Nodes</a></li>
+                        <li class="topicref"><a href="public-apis/post-snaplex-version-plexpath.html">Update the Snaplex to a Specific Version</a></li>
+                        <li class="topicref"><a href="public-apis/post-snaplex-version-latest-plexpath.html">Updates the Snaplex to the Latest Version</a></li>
+                        <li class="topicref"><a href="public-apis/get-snaplex-version.html">Get All Versions of the Snaplex Package</a></li>
+                        <li class="topicref"><a href="public-apis/get-snaplex-version-latest.html">Get the Latest Active Version of the Snaplex Package</a></li>
                      </ul>
                   </li>
                   <li class="topicref"><a href="public-apis/apis-user-and-group.html">User and Group APIs</a><ul>
-                        <li class="topicref"><a href="public-apis/post-users.html">POST /users</a></li>
-                        <li class="topicref"><a href="public-apis/get-users-email.html">GET /users/{email}</a></li>
-                        <li class="topicref"><a href="public-apis/put-users-email.html">PUT /users/{email}</a></li>
-                        <li class="topicref"><a href="public-apis/delete-users-email.html">DELETE /users/{email}</a></li>
-                        <li class="topicref"><a href="public-apis/post-groups.html">POST /groups</a></li>
-                        <li class="topicref"><a href="public-apis/get-groups-org.html">GET /groups/{org}</a></li>
-                        <li class="topicref"><a href="public-apis/get-groups-org-group.html">GET /groups/{org}/{groupname}</a></li>
-                        <li class="topicref"><a href="public-apis/patch-groups-org-group.html">PATCH /groups/{org}/{groupname}</a></li>
-                        <li class="topicref"><a href="public-apis/put-groups-org-group.html">PUT /groups/{org}/{groupname}</a></li>
-                        <li class="topicref"><a href="public-apis/delete-groups-org-group.html">DELETE /groups/{org}/{groupname}</a></li>
+                        <li class="topicref"><a href="public-apis/post-users.html">Create a User</a></li>
+                        <li class="topicref"><a href="public-apis/get-users-email.html">Retrieve Info About a User</a></li>
+                        <li class="topicref"><a href="public-apis/put-users-email.html">Update a User</a></li>
+                        <li class="topicref"><a href="public-apis/delete-users-email.html">Delete a User</a></li>
+                        <li class="topicref"><a href="public-apis/post-groups.html">Create a Group</a></li>
+                        <li class="topicref"><a href="public-apis/get-groups-org.html">Retrieve the List of Groups in an Org</a></li>
+                        <li class="topicref"><a href="public-apis/get-groups-org-group.html">Retrieve Info About a Group</a></li>
+                        <li class="topicref"><a href="public-apis/patch-groups-org-group.html">Add or Remove Users from a Group</a></li>
+                        <li class="topicref"><a href="public-apis/put-groups-org-group.html">Replace the Member List of a Group</a></li>
+                        <li class="topicref"><a href="public-apis/delete-groups-org-group.html">Delete a Group</a></li>
                      </ul>
                   </li>
                   <li class="topicref"><a href="public-apis/api-perms-vs-manager-perms.html">Permissions in Manager and in APIs</a></li>
