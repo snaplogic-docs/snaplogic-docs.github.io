@@ -1,0 +1,82 @@
+# Main
+
+-   Getting Started
+-   Release Notes
+-   SnapLogic Concepts
+    -   Snaps and Pipelines
+        -   Snap Reference
+    -   Tasks
+    -   Flows
+-   SnapLogic Designer
+-   SnapLogic Manager
+    -   Proxies
+        -   [Proxies for APIs](apim/proxies.md)
+            -   [Proxy Details](apim/proxy-details.md)
+            -   [Proxy Endpoints](apim/proxy-endpoints.md)
+            -   [Proxy Endpoint Details](apim/proxy-endpoint-details.md)
+            -   [Proxy Security Policies](apim/proxy-security-policies.md)
+    -   Manager
+        -   [SnapLogic Features for Orgs](manager/manager-features.md)
+-   SnapLogic Monitoring Dashboard
+-   [BETA \| SnapLogic Studio](sl-studio/about-studio.md)
+    -   Develop
+    -   Analyze
+        -   [BETA \| Analyze: Execution Overview](sl-studio/analyze-execution.md)
+            -   [BETA \| Analyze: Execution Details](sl-studio/analyze-execution-detail.md)
+    -   Explore
+-   SnapLogic Platform
+-   Administration and Configuration
+-   SnapLogic API Management
+-   [SnapLogic Public APIs](public-apis/public-apis.md)
+    -   Activity APIs
+        -   [GET /activities/\{org\}](public-apis/get-activities-org.md)
+    -   Asset ACL APIs
+        -   [POST /assetapi/acl/\{project\_path\}](public-apis/post-assetapi-acl-projpath.md)
+        -   [GET /assetapi/acl/\{project\_path\}](public-apis/get-assetapi-acl-projpath.md)
+        -   [DELETE /assetapi/acl/\{project\_path\}](public-apis/delete-assetapi-acl-projpath.md)
+    -   Project APIs
+        -   [POST /project/\{project\_or\_space\_path\}](public-apis/post-project-projpath.md)
+        -   [PUT /project/\{project\_or\_space\_path\}](public-apis/put-project-projpath.md)
+    -   GitHub APIs
+        -   [POST /project/checkout/\{project\_path\}](public-apis/post-project-checkout-projpath.md)
+        -   [POST /project/pull/\{project\_path\}](public-apis/post-project-pull-projpath.md)
+        -   [POST /ghwebhook](public-apis/post-ghwebhook.md)
+        -   [GET /repo-status/\{project\_path\}](public-apis/get-repo-status-projpath.md)
+    -   Log APIs
+        -   [GET /log/\{org\}](public-apis/get-log-org.md)
+    -   Pipeline Monitoring APIs
+        -   [GET /runtime/\{org\}](public-apis/get-runtime-org.md)
+        -   [GET /runtime/\{org\}/\{ruuid\}](public-apis/get-runtime-org-ruuid.md)
+        -   [GET /runtime/api-stats/\{org\}](public-apis/get-runtime-apistats-org.md)
+        -   [GET /runtime/api-stats/\{org\}/daily](public-apis/get-runtime-apistats-org-daily.md)
+        -   [GET /runtime/api-stats/\{org\}/concurrent](public-apis/get-runtime-apistats-org-concurrent.md)
+        -   [POST /runtime/start/\{org\}/\{ruuid\}](public-apis/post-runtime-start-org-ruuid.md)
+        -   [POST /runtime/stop/\{org\}/\{ruuid\}](public-apis/post-runtime-stop-org-ruuid.md)
+    -   Project Migration APIs
+        -   [POST /project/migrate/\{project\_path\}](public-apis/post-project-migrate-projpath.md)
+        -   [GET /migrate/\{status\_token\}](public-apis/get-migrate-status-token.md)
+    -   Snaplex Management APIs
+        -   [POST /snaplex/restart/\{plex\_path\}/\{hostname\}](public-apis/post-snaplex-restart-plexpath-hostname.md)
+        -   [POST /snaplex/maintenance/\{plex\_path\}/\{hostname\}](public-apis/post-snaplex-maintenance-plexpath-hostname.md)
+        -   [GET /snaplex/config/\{plex\_path\}](public-apis/get-snaplex-config-plexpath.md)
+    -   Snaplex Monitoring APIs
+        -   [GET /snaplex/\{org\}](public-apis/get-snaplex-org.md)
+    -   Snaplex Version APIs
+        -   [POST /snaplex/version/\{plex\_path\}](public-apis/post-snaplex-version-plexpath.md)
+        -   [POST /snaplex/version/latest/\{plex\_path\}](public-apis/post-snaplex-version-latest-plexpath.md)
+        -   [GET /snaplex/version](public-apis/get-snaplex-version.md)
+        -   [GET /snaplex/version/latest](public-apis/get-snaplex-version-latest.md)
+    -   User and Group Management APIs
+        -   [POST /users](public-apis/post-users.md)
+        -   [GET /users/\{email\}](public-apis/get-users-email.md)
+        -   [PUT /users/\{email\}](public-apis/put-users-email.md)
+        -   [DELETE /users/\{email\}](public-apis/delete-users-email.md)
+        -   [POST /groups](public-apis/post-groups.md)
+        -   [GET /groups/\{org\}](public-apis/get-groups-org.md)
+        -   [GET /groups/\{org\}/\{groupname\}](public-apis/get-groups-org-group.md)
+        -   [PATCH /groups/\{org\}/\{groupname\}](public-apis/patch-groups-org-group.md)
+        -   [PUT /groups/\{org\}/\{groupname\}](public-apis/put-groups-org-group.md)
+        -   [DELETE /groups/\{org\}/\{groupname\}](public-apis/delete-groups-org-group.md)
+    -   [Permissions in Manager and in APIs](public-apis/api-perms-vs-manager-perms.md)
+    -   [Reference: Activity Metadata](public-apis/ref-activity-metadata.md)
+

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-US" id="post-assetapi-acl-projpath">
+
+  <title>Grant a User or Group Access to a Project or Project Space</title>
+  <titlealts><navtitle>Grant Access to a Project or Space</navtitle></titlealts>
+
+  <!-- <shortdesc><ph conref="#./ph-shortdesc"/></shortdesc> -->
+
+  <conbody>
+
+    <section>
+      <p outputclass="shortsyntax">POST /assetapi/acl/{project_or_space_path}</p>
+    </section>
+
+    <section>
+      <title>Overview</title>
+
+      <p>This API <ph id="ph-shortdesc"> grants a user or group access to the specified project or project space.</ph></p>
+    </section>
+
+
+    <section>
+      <title>Prerequisites</title>
+
+      <ul>
+        <li><ph conkeyref="k-api/ph-prereq-org-admin-role"/></li>
+      </ul>
+    </section>
+
+
+    <section outputclass="tabs">
+      <ul conkeyref="k-api/ul-tabmenu2"><li/></ul>
+    </section>
+
+
+    <section id="section-api-request" outputclass="api-request tabcontent">
+      <!-- <title>Request</title> -->
+
+      <codeblock id="codeblock-endpoint" outputclass="normalize-space lang-uri">
+        <ph id="ph-method">POST</ph> <ph conkeyref="k-api/ph-endpoint-full-url"/><ph id="ph-sig">/assetapi/acl/{project_or_space_path}</ph>
+      </codeblock>
+
+      <sectiondiv>
+        <p outputclass="sectiondivtitle">Path Parameters</p>
+
+        <table>
+          <tgroup cols="2">
+            <colspec colname="col-key"  colwidth="20%"/>
+            <colspec colname="col-desc" colwidth="75%"/>
+            <thead><row conkeyref="k-api/row-thead-key-desc"><entry/></row></thead>
+            <tbody>
+              <row conkeyref="k-api/row-pathparam-podpath"><entry/></row>
+              <row conkeyref="k-api/row-pathparam-projorspacepath"><entry/></row>
+            </tbody>
+          </tgroup>
+        </table>
+      </sectiondiv>
+
+      <sectiondiv>
+        <p outputclass="sectiondivtitle">Query Parameters</p>
+        <p>None.</p>
+      </sectiondiv>
+
+      <sectiondiv>
+        <p outputclass="sectiondivtitle">Request Header</p>
+        <div conkeyref="k-api/div-auth-contenttype"/>
+      </sectiondiv>
+
+      <sectiondiv>
+        <p outputclass="sectiondivtitle">Request Body</p>
+
+        <codeblock id="request-body" outputclass="normalize-space lang-json">
+          {
+            "grant_type" : "...",
+            "grantee" : "...",
+            "permission_list" : [ ... ],
+            "inherit" : ...
+          }
+        </codeblock>
+
+        <table>
+          <tgroup cols="3">
+            <colspec colname="col-key"  colwidth="25%"/>
+            <colspec colname="col-type" colwidth="15%"/>
+            <colspec colname="col-desc" colwidth="60%"/>
+            <thead conkeyref="k-misc/thead-key-type-desc"><row><entry/></row></thead>
+            <tbody>
+              <row conkeyref="k-api/row-request-grant-type"><entry/></row>
+              <row conkeyref="k-api/row-request-grantee-grant"><entry/></row>
+              <row conkeyref="k-api/row-request-permission-list"><entry/></row>
+              <row conkeyref="k-api/row-request-inherit"><entry/></row>
+            </tbody>
+          </tgroup>
+        </table>
+      </sectiondiv>
+    </section>
+
+
+    <section id="section-api-response" outputclass="api-response tabcontent">
+      <!-- <title>Response</title> -->
+
+      <sectiondiv>
+        <p outputclass="sectiondivtitle">Response Header</p>
+        <div conkeyref="k-api/div-table-status-code-only"/>
+      </sectiondiv>
+
+      <sectiondiv>
+        <p outputclass="sectiondivtitle">Response Body</p>
+      </sectiondiv>
+    </section>
+
+
+    <!--
+    <section id="section-api-notes" outputclass="api-notes tabcontent">
+      <!- - <title>Notes</title> - ->
+    </section>
+
+
+    <section id="section-api-examples" outputclass="api-examples tabcontent">
+      <!- - <title>Example - </title> - ->
+    </section>
+    -->
+
+  </conbody>
+
+  <related-links/>
+
+</concept>
+
+
+<!--
+Source: Tectonic\sldb\src\main\python\sldb\services\public\asset_handler.py
+Last refreshed: 20211223
+        self.add_route('/acl/<path:path>', self.add_permission, methods=[http_lib.HTTP_POST],
+                       arguments=[
+                           Argument(name='path', arg_from=Argument.URL, default='/'),
+                           Argument(name='granter', arg_from=Argument.USER_ID),
+                           Argument(name='grant_type', arg_from=Argument.BODY),
+                           Argument(name='grantee', arg_from=Argument.BODY),
+                           Argument(name='permission_list', arg_from=Argument.BODY),
+                           Argument(name='inherit', arg_from=Argument.BODY, arg_type=Argument.BOOL)
+                       ],
+                       trailing_optional=True)
+
+Jiras: PLAT-8417
+-->

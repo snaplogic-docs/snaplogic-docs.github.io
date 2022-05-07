@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-US" id="post-users">
+
+  <title>Create a User</title>
+
+  <!-- <shortdesc><ph conref="#./ph-shortdesc"/></shortdesc> -->
+
+  <conbody>
+
+    <section>
+      <p outputclass="shortsyntax">POST /users</p>
+    </section>
+
+    <section>
+      <title>Overview</title>
+
+      <p>This API <ph id="ph-shortdesc">creates a user.</ph></p>
+    </section>
+
+
+    <section>
+      <title>Prerequisites</title>
+
+      <ul>
+        <li><ph conkeyref="k-api/ph-prereq-org-admin-role"/></li>
+      </ul>
+    </section>
+
+
+    <section outputclass="tabs">
+      <ul conkeyref="k-api/ul-tabmenu2"><li/></ul>
+    </section>
+
+
+    <section id="section-api-request" outputclass="api-request tabcontent">
+      <!-- <title>Request</title> -->
+
+      <codeblock id="codeblock-endpoint" outputclass="normalize-space lang-uri">
+        <ph id="ph-method">POST</ph> <ph conkeyref="k-api/ph-endpoint-full-url"/><ph id="ph-sig">/users</ph>
+      </codeblock>
+
+      <sectiondiv>
+        <p outputclass="sectiondivtitle">Path Parameters</p>
+
+        <table>
+          <tgroup cols="2">
+            <colspec colname="col-key"  colwidth="20%"/>
+            <colspec colname="col-desc" colwidth="75%"/>
+            <thead><row conkeyref="k-api/row-thead-key-desc"><entry/></row></thead>
+            <tbody>
+              <row conkeyref="k-api/row-pathparam-podpath"><entry/></row>
+            </tbody>
+          </tgroup>
+        </table>
+      </sectiondiv>
+
+      <sectiondiv>
+        <p outputclass="sectiondivtitle">Query Parameters</p>
+        <p>None.</p>
+      </sectiondiv>
+
+      <sectiondiv>
+        <p outputclass="sectiondivtitle">Request Header</p>
+        <div conkeyref="k-api/div-auth-contenttype"/>
+      </sectiondiv>
+
+      <sectiondiv>
+        <p outputclass="sectiondivtitle">Request Body</p>
+
+        <codeblock id="request-body" outputclass="normalize-space lang-json">
+          {
+            "email" : "...",
+            "first_name" : "...",
+            "last_name" : "...",
+            "organization" : "...",
+            "administrator" : ...,
+            "allow_password_login" : ...,
+            "utility" : ...,
+            "ui_access" : ...,
+            "create_home_directory" : ...,
+            "email_notification" : ...,
+            "certificate" : "...",
+            "file_handle" : "..."
+          }
+        </codeblock>
+
+        <table>
+          <tgroup cols="3">
+            <colspec colname="col-key"  colwidth="25%"/>
+            <colspec colname="col-type" colwidth="15%"/>
+            <colspec colname="col-desc" colwidth="60%"/>
+            <thead conkeyref="k-misc/thead-key-type-desc"><row><entry/></row></thead>
+            <tbody>
+              <row conkeyref="k-api/row-request-user-email"><entry/></row>
+              <row conkeyref="k-api/row-request-user-first-name"><entry/></row>
+              <row conkeyref="k-api/row-request-user-last-name"><entry/></row>
+              <row conkeyref="k-api/row-request-user-org"><entry/></row>
+              <row conkeyref="k-api/row-request-user-administrator"><entry/></row>
+              <row conkeyref="k-api/row-request-user-allow-password-login"><entry/></row>
+              <row conkeyref="k-api/row-request-user-utility"><entry/></row>
+              <row conkeyref="k-api/row-request-user-ui-access"><entry/></row>
+              <row conkeyref="k-api/row-request-user-create-home-directory"><entry/></row>
+              <row conkeyref="k-api/row-request-user-email-notification"><entry/></row>
+              <row conkeyref="k-api/row-request-user-certificate"><entry/></row>
+              <row conkeyref="k-api/row-request-user-file-handle"><entry/></row>
+            </tbody>
+          </tgroup>
+        </table>
+
+      </sectiondiv>
+    </section>
+
+
+    <section id="section-api-response" outputclass="api-response tabcontent">
+      <!-- <title>Response</title> -->
+
+      <sectiondiv>
+        <p outputclass="sectiondivtitle">Response Header</p>
+        <div conkeyref="k-api/div-table-status-code-only"/>
+      </sectiondiv>
+
+      <sectiondiv>
+        <p outputclass="sectiondivtitle">Response Body</p>
+
+        <!-- From the old docs: The basic_access field in the response records the last time (in UTC ISO-8601 format) that a user accessed the REST API using basic authentication. When the REST API is accessed for the first time, the value might be null. -->
+      </sectiondiv>
+    </section>
+
+
+    <!--
+    <section id="section-api-notes" outputclass="api-notes tabcontent">
+      <!- - <title>Notes</title> - ->
+    </section>
+
+
+    <section id="section-api-examples" outputclass="api-examples tabcontent">
+      <!- - <title>Example - </title> - ->
+    </section>
+    -->
+
+  </conbody>
+
+  <related-links/>
+
+</concept>
+
+
+<!--
+Source: Tectonic\sldb\src\main\python\sldb\services\public\user_handler.py
+Last refreshed: 20211223
+        self.add_route('', self.create_user, methods=[slcommon.snap_http_lib.HTTP_POST],
+                       arguments=[
+                           Argument('caller', Argument.USER_ID),
+                           Argument('email', Argument.BODY),
+                           Argument('first_name', Argument.BODY),
+                           Argument('last_name', Argument.BODY),
+                           Argument('organization', Argument.BODY),
+                           Argument('administrator', Argument.BODY, Argument.BOOL),
+                           Argument('allow_password_login', Argument.BODY, Argument.BOOL),
+                           Argument('utility', Argument.BODY, Argument.BOOL),
+                           Argument('ui_access', Argument.BODY, Argument.BOOL),
+                           Argument('create_home_directory', Argument.BODY, Argument.BOOL),
+                           Argument('email_notification', Argument.BODY, Argument.BOOL),
+                           Argument('certificate', Argument.BODY),
+                           Argument('file_handle', Argument.BODY),
+                       ])
+
+Jiras: PLAT-8417
+-->

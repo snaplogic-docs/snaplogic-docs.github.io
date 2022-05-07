@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xml:lang="en-US" id="apim">
+
+  <title>SnapLogic API Management</title>
+
+  <topicref href="apim-about.dita" collection-type="family">
+
+    <topicref href="api-lifecycle.dita"/>
+
+    <topichead collection-type="family">
+      <topicmeta><navtitle>APIs</navtitle></topicmeta>
+      <topicref href="api-create-design-first.dita"/>
+      <topicref href="api-create-existing-project.dita"/>
+      <topicref href="api-create-empty.dita"/>
+      <topicref href="api-enable-try-it-out.dita"/>
+      <!--
+      <topicref href="api-edit.dita"/>
+      <topicref href="api-policy-add.dita"/>
+      <topicref href="api-policy-view.dita"/>
+      <topicref href="api-policy-edit.dita"/>
+      <topicref href="api-delete.dita"/>
+      <topicref href="api-sample-spec.dita"/>
+      <topicref href="apiversion-create-design-first.dita"/>
+      <topicref href="apiversion-create-existing-assets.dita"/>
+      <topicref href="apiversion-create-empty.dita"/>
+      <topicref href="apiversion-edit.dita"/>
+      <topicref href="apiversion-delete.dita"/>
+      <topicref href="apiversionasset-create.dita"/>
+      <topicref href="apiversionasset-delete.dita"/>
+      -->
+    </topichead>
+
+    <topicref href="proxies.dita" collection-type="family">
+      <topicref href="proxy-create.dita"/>
+      <topicref href="proxy-details.dita"/>
+      <topicref href="proxy-endpoints.dita"/>
+      <topicref href="proxy-endpoint-details.dita"/>
+      <topicref href="proxy-mapping-rules.dita">
+        <topicref href="proxy-mapping-rules-view-list.dita"/>
+        <topicref href="proxy-mapping-rules-create.dita"/>
+        <topicref href="proxy-mapping-rules-edit.dita"/>
+        <topicref href="proxy-mapping-rules-delete.dita"/>
+        <topicref href="proxy-mapping-rules-prioritize.dita"/>
+      </topicref>
+      <topicref href="proxy-security-policies.dita"/>
+    </topicref>
+
+    <topichead collection-type="family">
+      <topicmeta><navtitle>Security Policies</navtitle></topicmeta>
+    </topichead>
+
+    <topichead collection-type="family">
+      <topicmeta><navtitle>API Manager</navtitle></topicmeta>
+      <topicref href="tryapi-cors-settings.dita"/>
+    </topichead>
+
+    <topichead collection-type="family">
+      <topicmeta><navtitle>Portal Manager</navtitle></topicmeta>
+      <topicref href="portalmgr-settings.dita"/>
+    </topichead>
+
+
+  </topicref>
+
+</map>
