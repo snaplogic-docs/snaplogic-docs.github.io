@@ -23,8 +23,12 @@ $(document).ready(function() {
 
   /* Details */
   /* $('p').replaceWith($('<div/>').html($('p').html())); */
-  $('.details').replaceWith( $('<details/>').html($('.details').html()));
-  $('.detsumm').replaceWith( $('<summary/>').html($('.detsumm').html()));
+  $('.details').each( function() {
+    $(this).replaceWith( $('<details/>').html($('.details').html()))
+    });
+  $('.detsumm').each( function() {
+    $(this).replaceWith( $('<summary/>').html($('.detsumm').html()))
+    });
 
   /* Tabs */
   $('.tablink').click( function() {

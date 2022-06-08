@@ -1,0 +1,688 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en-us"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2022"><meta name="generator" content="DITA-OT"><title>Glossary</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!-- <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script> -->
+  <!-- <script src="https://kit.fontawesome.com/enter-your-own-fontawesome-code.js" crossorigin="anonymous"></script> -->
+<link rel="stylesheet" type="text/css" href="../theme/commonltr.css"><link rel="stylesheet" type="text/css" href="../theme/sldocs.css"></head><body><header role="banner"><div class="header">
+  <a href="/index.html"><img class="noborder" src="https://snaplogic-docs.github.io/k/LogoN.svg" alt="SnapLogic Logo"> <ph class="site-title">Documentation</ph></a>
+</div></header><nav class="toc" role="navigation"><ul><li><span>Release Notes</span><ul><li><a href="../Chunk1889420585.html#Chunk1889420585">2022 May (4.29.0)</a><ul></ul></li></ul></li><li><span>Getting Started</span></li><li><a href="../concepts/snaplogic-concepts.html">Concepts</a></li><li><a href="../concepts/snaplogic-features.html">Features</a><ul><li><a href="../concepts/manager-features.html">SnapLogic Features for Orgs</a></li></ul></li><li><a href="../snaps/snaps-about.html">Snaps</a></li><li><a href="../pipelines/pipelines-about.html">Pipelines</a></li><li><a href="../tasks/tasks-about.html">Tasks</a></li><li><a href="../studio/studio-about.html">PREVIEW | SnapLogic Studio</a><ul><li><span>Develop</span></li><li><span>Analyze</span><ul><li><a href="../studio/analyze-execution.html">PREVIEW | Analyze: Execution Overview</a><ul><li><a href="../studio/analyze-execution-detail.html">PREVIEW | Analyze: Execution Details</a></li></ul></li></ul></li><li><span>Explore</span></li></ul></li><li><a href="../designer/designer-about.html">Designer</a></li><li><a href="../manager/manager-about.html">Manager</a></li><li><a href="../dashboard/dashboard-about.html">Dashboard</a></li><li><a href="../apim/apim-about.html">SnapLogic API Management</a><ul><li><a href="../apim/api-lifecycle.html">The API and Proxy Lifecycle</a></li><li><span>APIs</span><ul><li><a href="../apim/api-create-design-first.html">Create API Using Design First</a></li><li><a href="../apim/api-create-existing-project.html">Create API Using Existing Project</a></li><li><a href="../apim/api-create-empty.html">Create Empty API</a></li><li><a href="../apim/api-enable-try-it-out.html">Enable "Try It Out" for your API</a></li></ul></li><li><a href="../apim/proxies.html">Proxies</a><ul><li><a href="../apim/proxy-create.html">Create Proxy</a></li><li><a href="../apim/proxy-details.html">Proxy Details</a></li><li><a href="../apim/proxy-endpoints.html">Proxy Endpoints</a></li><li><a href="../apim/proxy-endpoint-details.html">Proxy Endpoint Details</a></li><li><a href="../apim/proxy-mapping-rules.html">Proxy Endpoint Mapping Rules</a><ul><li><a href="../apim/proxy-mapping-rules-view-list.html">View Mapping Rules</a></li><li><a href="../apim/proxy-mapping-rules-create.html">Create Proxy Mapping Rule</a></li><li><a href="../apim/proxy-mapping-rules-edit.html">Edit Proxy Mapping Rule</a></li><li><a href="../apim/proxy-mapping-rules-delete.html">Delete Proxy Mapping Rule</a></li><li><a href="../apim/proxy-mapping-rules-prioritize.html">Prioritize Proxy Mapping Rules</a></li></ul></li><li><a href="../apim/proxy-security-policies.html">Proxy Security Policies</a></li></ul></li><li><span>Security Policies</span></li><li><span>API Manager</span><ul><li><a href="../apim/tryapi-cors-settings.html">Setting Up a CORS Restriction for Try It Out</a></li></ul></li><li><span>Portal Manager</span><ul><li><a href="../apim/portalmgr-settings.html">Portal Manager Settings</a></li></ul></li></ul></li><li><a href="../public-apis/public-apis.html">SnapLogic Public APIs</a><ul><li><a href="../public-apis/apis-activity.html">Activity APIs</a><ul><li><a href="../public-apis/get-activities-org.html">Retrieve Activities in Org</a></li></ul></li><li><a href="../public-apis/apis-asset.html">Asset APIs</a><ul><li><a href="../public-apis/post-assetapi-acl-projpath.html">Grant Access to a Project or Space</a></li><li><a href="../public-apis/get-assetapi-acl-projpath.html">Retrieve Privileges of Current User</a></li><li><a href="../public-apis/delete-assetapi-acl-projpath.html">Revoke All Project Access from a User or Group</a></li><li><a href="../public-apis/post-assetapi-project-projpath.html">Create New Project or Project Space</a></li><li><a href="../public-apis/put-assetapi-project-projpath.html">Rename a Project or Project Space</a></li><li><a href="../public-apis/delete-assetapi-project-projpath.html">Delete a Project or Project Space</a></li></ul></li><li><a href="../public-apis/apis-log.html">Log APIs</a><ul><li><a href="../public-apis/get-log-org.html">Retrieve Pipeline Logs</a></li></ul></li><li><a href="../public-apis/apis-pipeline-task.html">Pipeline and Task APIs</a><ul><li><a href="../public-apis/get-runtime-org.html">Retrieve Info About Tasks Matching a Filter</a></li><li><a href="../public-apis/get-runtime-org-ruuid.html">Retrieve Info About a Task</a></li><li><a href="../public-apis/get-runtime-apistats-org.html">Retrieve Concurrent and Daily Task Metrics</a></li><li><a href="../public-apis/get-runtime-apistats-org-daily.html">Retrieve Daily Task Metrics</a></li><li><a href="../public-apis/get-runtime-apistats-org-concurrent.html">Retrieve Concurrent Task Metrics</a></li><li><a href="../public-apis/post-runtime-start-org-ruuid.html">Resume a Resumable Task</a></li><li><a href="../public-apis/post-runtime-stop-org-ruuid.html">Stop a Task</a></li></ul></li><li><a href="../public-apis/apis-project.html">Project APIs</a><ul><li><a href="../public-apis/post-project-checkout-projpath.html">Check Out Project Files from GitHub</a></li><li><a href="../public-apis/post-project-pull-projpath.html">Pull the Latest Project Files from GitHub</a></li><li><a href="../public-apis/get-repo-status-projpath.html">Retrieve the Status of the GitHub Repository</a></li><li><a href="../public-apis/post-project-migrate-projpath.html">Migrate a Project to Another Org</a></li><li><a href="../public-apis/get-migrate-status-token.html">Retrieve the Status of a Migration</a></li></ul></li><li><a href="../public-apis/apis-snaplex.html">Snaplex APIs</a><ul><li><a href="../public-apis/post-snaplex-restart-plexpath-hostname.html">Request a Restart of a Node</a></li><li><a href="../public-apis/post-snaplex-maintenance-plexpath-hostname.html">Switch a Node to Maintenance Mode</a></li><li><a href="../public-apis/get-snaplex-config-plexpath.html">Retrieve Config Info for a Groundplex</a></li><li><a href="../public-apis/get-snaplex-org.html">Retrieve Info About Nodes</a></li><li><a href="../public-apis/post-snaplex-version-plexpath.html">Update the Snaplex to a Specific Version</a></li><li><a href="../public-apis/post-snaplex-version-latest-plexpath.html">Updates the Snaplex to the Latest Version</a></li><li><a href="../public-apis/get-snaplex-version.html">Get All Versions of the Snaplex Package</a></li><li><a href="../public-apis/get-snaplex-version-latest.html">Get the Latest Active Version of the Snaplex Package</a></li></ul></li><li><a href="../public-apis/apis-user-and-group.html">User and Group APIs</a><ul><li><a href="../public-apis/post-users.html">Create a User</a></li><li><a href="../public-apis/get-users-email.html">Retrieve Info About a User</a></li><li><a href="../public-apis/put-users-email.html">Update a User</a></li><li><a href="../public-apis/delete-users-email.html">Delete a User</a></li><li><a href="../public-apis/post-groups.html">Create a Group</a></li><li><a href="../public-apis/get-groups-org.html">Retrieve the List of Groups in an Org</a></li><li><a href="../public-apis/get-groups-org-group.html">Retrieve Info About a Group</a></li><li><a href="../public-apis/patch-groups-org-group.html">Add or Remove Users from a Group</a></li><li><a href="../public-apis/put-groups-org-group.html">Replace the Member List of a Group</a></li><li><a href="../public-apis/delete-groups-org-group.html">Delete a Group</a></li></ul></li><li><a href="../public-apis/api-perms-vs-manager-perms.html">Permissions in Manager and in APIs</a></li><li><a href="../public-apis/ref-activity-metadata.html">Reference: Activity Metadata</a></li></ul></li><li><a href="../fdl/fdl-about.html">Fast Data Loader</a></li><li><a href="../snaplexes/snaplexes-about.html">Snaplexes</a></li><li><a href="../security/accounts-about.html">Accounts</a></li><li><a href="../security/users-about.html">Users</a></li><li><a href="../security/groups-about.html">Groups</a></li><li><a href="../security/orgs-about.html">Orgs</a></li><li><a href="../security/permissions-about.html">Permissions</a></li><li><a href="../security/policies-about.html">Policies</a></li><li><span>References</span><ul><li class="active"><a href="../glossary/glossary.html#glossary">Glossary</a><ul></ul></li></ul></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1"><article class="nested0" aria-labelledby="ariaid-title1" id="glossary">
+
+  <h1 class="title topictitle1" id="ariaid-title1">Glossary</h1>
+
+  <div class="body conbody">
+  </div>
+
+<article class="topic concept glossentry nested1" aria-labelledby="ariaid-title2" lang="en-US" id="access-token">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title2">Access Token</h2>
+  <div class="abstract glossdef">An authentication token that SnapLogic uses to access an API.</div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title3" lang="en-US" id="api-consumer">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title3">API Consumer</h2>
+  <div class="abstract glossdef">
+    The API consumer user is a user that may or may not have a SnapLogic account, but is primarily interested in consuming APIs that are managed through the SnapLogic API Gateway.
+    These users interface with the Developer Portal.
+  </div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title4" lang="en-US" id="api-meter">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title4">API Meter</h2>
+  <div class="abstract glossdef">A tool in SnapLogic Manager that provides information on the API limits for your Org and API usage reports.</div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title5" lang="en-US" id="asset">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title5">Asset</h2>
+  <div class="abstract glossdef">
+    Any resource that can be created by a SnapLogic user and is tracked in SnapLogic Manager.
+    <a class="xref" href="../security/accounts-about.html">Accounts</a>,
+    Files,
+    <a class="xref" href="../tasks/tasks-about.html">Tasks</a>,
+    <a class="xref" href="../pipelines/pipelines-about.html">Pipelines</a>,
+    <a class="xref" href="../snaps/snaps-about.html">Snap Packs</a>,
+    <a class="xref" href="../snaplexes/snaplexes-about.html">Snaplexes</a>, and
+    Tables qualify as Assets.
+    In <span class="ph uicontrol">Manager</span>, you can search for your Assets and, depending on the Asset type, view the details, statistics, or activity logs.
+  </div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title6" lang="en-US" id="autolink-history-cleanup">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title6">AutoLink History Cleanup</h2>
+  <div class="abstract glossdef">Cleans up the AutoLink history.</div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title7" lang="en-US" id="autolink">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title7">AutoLink</h2>
+  <div class="abstract glossdef">A feature that simplifies data mapping by suggesting Input Schema mapping to the Target Schema in the Mapper Snap.</div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title8" lang="en-US" id="binary-data">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title8">Binary Data</h2>
+  <div class="abstract glossdef">
+    A file that contains data in binary format and a header that contains the metadata for the binary content.
+    For example, a file with JSON data might have a header with a <code class="ph codeph">content-type</code> field set to <code class="ph codeph">application/json</code>.
+  </div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title9" lang="en-US" id="canvas">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title9">Canvas</h2>
+  <div class="abstract glossdef">The area in SnapLogic Designer where you can design, render, validate, and execute integration Pipelines.</div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title10" lang="en-US" id="categorical-dataset">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title10">Categorical Dataset</h2>
+  <div class="abstract glossdef">Data points that represent characteristics, groups, or categories. The data may be numeric. For example, Gender and Marital Status.</div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title11" lang="en-US" id="cc-user">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title11">CC User</h2>
+  <div class="abstract glossdef">CC user is a SnapLogic system user, such as cc+<var class="keyword varname">org_name</var>@snaplogic.com, which is automatically created for use by Snaplex instances for registering with the SnapLogic control plane.</div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title12" lang="en-US" id="cloudplex">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title12">Cloudplex</h2>
+  <div class="abstract glossdef">A Snaplex that runs inside the SnapLogic Cloud. A Cloudplex is managed by SnapLogic.</div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title13" lang="en-US" id="clustering">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title13">Clustering</h2>
+  <div class="abstract glossdef">Applicable to <a class="xref" href="https://docs-snaplogic.atlassian.net/wiki/spaces/SD/pages/615186433/SnapLogic+Data+Science+Machine+Learning" target="_blank" rel="external noopener">SnapLogic Data Science</a>, clustering involves grouping a set of objects in a way that objects in a group are more similar to each other than objects in other groups.</div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title14" lang="en-US" id="control-plane">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title14">Control Plane</h2>
+  <div class="abstract glossdef">
+    The back-end management mechanism for the SnapLogic IIP.
+    The Control Plane runs on the cloud as a multi-tenant service, stores Pipeline definitions and metadata information, while also managing triggered and scheduled Pipeline executions.
+  </div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title15" lang="en-US" id="data-catalog">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title15">Data Catalog</h2>
+  <div class="abstract glossdef">A collection of relational tables that stores database metadata and allows you to query and update attributes in the relational tables in the SnapLogic platform.</div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title16" lang="en-US" id="data-lineage">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title16">Data Lineage</h2>
+  <div class="abstract glossdef">
+    A new service within the SnapLogic Dashboard as a separate subtab that enables you to visualize the relationship between your Pipelines and their data sources.
+    When you fetch the data lineage for a target data type, the Data Lineage displays the data sources to which a Pipeline connects as a diagram.
+  </div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title17" lang="en-US" id="data-plane">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title17">Data Plane</h2>
+  <div class="abstract glossdef">
+    The data processing engine of the SnapLogic IIP.
+    The Data Plane that runs in the SnapLogic Cloud or in a customer data center (if on-premises), executes the Pipelines and monitors the JCC nodes that handle the Pipeline executions.
+  </div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title18" lang="en-US" id="data-preview">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title18">Data Preview</h2>
+  <div class="abstract glossdef">
+    A sample display of the data passing through the Pipeline per Snap in two views: tabular and visual.
+    You can access the Data Preview by clicking on the connector for a Snap that shows a text-like icon in the circular connector.
+  </div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title19" lang="en-US" id="data-visualization">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title19">Data Visualization</h2>
+  <div class="abstract glossdef">
+    A feature of Data Preview in Pipelines that enables you to view your data in a variety of charts.
+    You can generate pie, line, bar, and scatter charts from the given data.
+  </div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title20" lang="en-US" id="disabled-snap">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title20">Disabled Snap</h2>
+  <div class="abstract glossdef">
+    A Snap that neither executes or validates.
+    You can use disabled Snaps when building and testing Pipelines.
+    In a Pipeline, all Snaps downstream from a Disabled Snap do not execute or validate.
+  </div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title21" lang="en-US" id="downstream-snap">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title21">Downstream Snap</h2>
+  <div class="abstract glossdef">
+    The succeeding Snap of any given Snap in a Pipeline.
+    The input of the downstream Snap is the output of the given Snap.
+  </div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title22" lang="en-US" id="execute-pipeline">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title22">Execute Pipeline</h2>
+  <div class="abstract glossdef">
+    A Pipeline execution operation that executes the Pipeline completely.
+    This mode of execution impacts databases and/or endpoints.
+  </div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title23" lang="en-US" id="feature">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title23">Feature</h2>
+  <div class="abstract glossdef">
+    Applicable to SnapLogic Data Science, Feature is a measurement of the data point.
+    For example, height, width, mean, mode.
+  </div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title24" lang="en-US" id="feedmaster">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title24">FeedMaster</h2>
+  <div class="abstract glossdef">
+    A type of node, which is a Java Virtual Machine (JVM) installed on a Linux or a Windows server.
+    The FeedMaster is an interface between the node executing Ultra Pipelines and the clients used for Ultra Pipelines.
+    Learn <a class="xref" href="https://docs-snaplogic.atlassian.net/wiki/spaces/SD/pages/809009264/Deploying+a+FeedMaster+Node" target="_blank" rel="external noopener">how to deploy a FeedMaster Node</a>.
+  </div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title25" lang="en-US" id="field-snap-pack">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title25">Field Snap Pack</h2>
+  <div class="abstract glossdef">
+    A collection of private Snap Packs built by SnapLogic to meet specific use cases of customers.
+    Field Snap Packs might not be visible in the Snap catalog, might not be documented, usually are not tested by QA, and are not supported/maintained by our Development team.
+  </div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title26" lang="en-US" id="groundplex">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title26">Groundplex</h2>
+  <div class="abstract glossdef">A Snaplex that runs behind a firewall, provides on-premises connectivity at a customer site, and is administered by the customer.</div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title27" lang="en-US" id="health-dashboard">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title27">Health Dashboard</h2>
+  <div class="abstract glossdef">A tab in SnapLogic Dashboard that lets you monitor the health of your Snaplex instances and Pipelines.</div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title28" lang="en-US" id="iip">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title28">IIP</h2>
+  <div class="abstract glossdef">
+    The SnapLogic Intelligent Integration Platform.
+    A multi-tenant administration console that empowers you to control and monitor the performance of integration Pipelines as well as user permissions, projects, and security settings.
+  </div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title29" lang="en-US" id="infobox">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title29">Infobox</h2>
+  <div class="abstract glossdef">
+    The dialog of any Snap where you configure the Snap settings.
+    Infoboxes typically have tabs for
+      <span class="ph uicontrol">Settings</span>,
+      <span class="ph uicontrol">Views</span>,
+      <span class="ph uicontrol">Info</span>, and
+      <span class="ph uicontrol">Accounts</span>
+      associated with the concerned Snap.
+  </div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title30" lang="en-US" id="insights-wall">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title30">Insights Wall</h2>
+  <div class="abstract glossdef">
+    A tab in SnapLogic Dashboard that displays view time series data and logs.
+    The <span class="ph uicontrol">Insights</span> tab also retrieves logs from the runtime database to generate user activity graphs.
+  </div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title31" lang="en-US" id="integration-assistant">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title31">Integration Assistant</h2>
+  <div class="abstract glossdef">
+    A SnapLogic suggestion engine that recommends the most likely preceding and succeeding Snaps in a Pipeline.
+    The recommendation is based on the usage of successor and predecessor Snaps and historical frequency.
+  </div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title32" lang="en-US" id="jcc">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title32">JCC</h2>
+  <div class="abstract glossdef">
+    (Java Component Container)
+    The JCC is a node on the Data Plane that handles Pipeline executions.
+    A Snaplex can contain multiple JCC nodes.
+  </div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title33" lang="en-US" id="k-fold-cross-validation">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title33">k-fold Cross Validation</h2>
+  <div class="abstract glossdef">
+    Applicable to SnapLogic Data Science Snaps, k-fold Cross Validation is a statistical method used to estimate the performance of machine learning algorithms.
+    The dataset is separated into k equal-sized chunks and the model is trained on k-1 chunks and evaluated on the last chunk.
+    This process is repeated k-times so every data point has a chance to be in the test chunk once.
+    For example, you could break the dataset into 10 chunks and train the model on nine of the ten chunks and evaluate the updated model on the tenth chunk.
+    You could repeat this process ten times using each chunk until each data chunk has been used to evaluate–and train–the updated model.
+  </div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title34" lang="en-US" id="key-passphrase">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title34">Key Passphrase</h2>
+  <div class="abstract glossdef">A word or phrase that protects private key files from unauthorized users encrypting/decrypting the private keys.</div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title35" lang="en-US" id="latest-snaps">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title35">Latest Snaps</h2>
+  <div class="abstract glossdef">
+    A patch release of a Snap or Snap Pack, done on top of the prior GA release.
+    For example, you might configure a Developer Org to always have the Latest Snaps to test new features.
+    For a Production Org, you might choose Stable Snaps to ensure everything works as expected.
+  </div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title36" lang="en-US" id="max-in-flight">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title36">Max-in-flight</h2>
+  <div class="abstract glossdef">Applicable to Ultra Pipelines, the maximum number of documents that can be processed by an instance at a given time.</div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title37" lang="en-US" id="model">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title37">Model</h2>
+  <div class="abstract glossdef">
+    (Statistical Model)
+    Applicable to SnapLogic Data Science Snaps, a model is a mathematical formula that has been generated by a machine learning algorithm based on the dataset.
+    The model can be stored and used to give a prediction for the data in the future.
+  </div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title38" lang="en-US" id="node">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title38">Node</h2>
+  <div class="abstract glossdef">
+    (Snaplex node) A virtual machine or a set of computing resources that process data.
+    A Snaplex node can be:
+    <ul class="ul">
+      <li class="li"><a class="xref" href="glossary.html#node__cloudplex">Cloudplex node</a></li>
+      <li class="li"><a class="xref" href="glossary.html#node__groundplex">Groundplex node</a></li>
+      <li class="li"><a class="xref" href="glossary.html#node__jcc">JCC node</a></li>
+      <li class="li"><a class="xref" href="glossary.html#node__feedmaster">FeedMaster node</a></li>
+    </ul>
+  </div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title39" lang="en-US" id="numerical-dataset">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title39">Numerical Dataset</h2>
+  <div class="abstract glossdef">A dataset whose data points represent mathematical values. For example, height, weight, age.</div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title40" lang="en-US" id="on-premises-url">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title40">On-premises URL</h2>
+  <div class="abstract glossdef">A URL that can be used to trigger a task to run on a Groundplex without making a request outside the local network.</div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title41" lang="en-US" id="org-admin">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title41">Org Admin</h2>
+  <div class="abstract glossdef">
+    (Organization Administrator) An administrative user defined for a company within the SnapLogic application.
+    This user can create users and assign permissions within the organization, create Project spaces and may create projects.
+  </div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title42" lang="en-US" id="org">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title42">Org</h2>
+  <div class="abstract glossdef">
+    An entity created by SnapLogic used by a customer site administrator for provisioning user accounts and groups.
+    An <a class="xref" href="glossary.html#org__org-admin">Org admin</a> manages users, groups, permissions, and other access settings within the UI.
+  </div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title43" lang="en-US" id="override-url">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title43">Override URL</h2>
+  <div class="abstract glossdef">
+    Similar to the on-premises URL, the Override URL can trigger a task to execute on a Groundplex.
+    The Override URL ignores the Task's configured Snaplex and instead executes on the Snaplex that receives the request.
+  </div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title44" lang="en-US" id="pattern">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title44">Pattern</h2>
+  <div class="abstract glossdef">
+    A reusable template for creating Pipelines, typically created to address common use cases.
+    Patterns enable you to easily configure the properties of Snaps in the pattern.
+  </div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title45" lang="en-US" id="patterns-catalog">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title45">Patterns Catalog</h2>
+  <div class="abstract glossdef">
+    Enables you to access all the SnapLogic Pattern Pipelines that are available to you.
+    Pattern Pipelines are grouped by Project Spaces and Projects.
+  </div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title46" lang="en-US" id="pca">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title46">PCA</h2>
+  <div class="abstract glossdef">Applicable to SnapLogic Data Science, PCA is a dimension-reduction technique that can be used to reduce a large set of variables to a small set that still contains most of the information in the original set.</div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title47" lang="en-US" id="pipeline-recommendation">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title47">Pipeline Recommendation</h2>
+  <div class="abstract glossdef">Enables Iris to suggest probable Pipelines based on the existing Pipelines from your Org to which you have access, Pattern Pipelines from the SnapLogic Cloud Pattern Catalog, and synthesized Pipelines.</div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title48" lang="en-US" id="pipeline-wall">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title48">Pipeline Wall</h2>
+  <div class="abstract glossdef">A tab in SnapLogic Dashboard that displays Pipeline execution statistics and details.</div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title49" lang="en-US" id="pipeline">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title49">Pipeline</h2>
+  <div class="abstract glossdef">A chain of one or more Snaps linked together to orchestrate a data flow between endpoints.</div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title50" lang="en-US" id="pipelines-catalog">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title50">Pipelines Catalog</h2>
+  <div class="abstract glossdef">
+    Enables you to access all the Pipelines available to you.
+    Pipelines are grouped by Project Spaces and Projects.
+  </div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title51" lang="en-US" id="platform">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title51">Platform</h2>
+  <div class="abstract glossdef">
+    A set of HTML file-based and cloud-based applications that are delivered as a multi-tenant cloud service.
+    These applications allow you to design, manage, and monitor integrations.
+  </div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title52" lang="en-US" id="project-space">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title52">Project Space</h2>
+  <div class="abstract glossdef">
+    An additional level above projects to help you better organize your Pipelines.
+    Project Space consists of one or more projects and contains a shared project to maintain assets shared between the projects of that Project Space.
+  </div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title53" lang="en-US" id="project">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title53">Project</h2>
+  <div class="abstract glossdef">Stores all SnapLogic Assets: Accounts, Files, Tasks, Pipelines, Snap Packs, Tables, Proxies, and Snaplexes.</div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title54" lang="en-US" id="record-linkage">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title54">Record Linkage</h2>
+  <div class="abstract glossdef">
+    The task of finding records that refer to the same entity across different data sources.
+    Record linkage is necessary when joining data from different sources, based on entities that may not share a common identifier (such as database key or URI).
+  </div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title55" lang="en-US" id="refresh-token">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title55">Refresh Token</h2>
+  <div class="abstract glossdef">
+    A credential that SnapLogic uses to acquire new access tokens after the expiry of an existing access token.
+    The lifetime of a refresh token is longer compared to the lifetime of an access token.
+  </div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title56" lang="en-US" id="resumable-pipeline">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title56">Resumable Pipeline</h2>
+  <div class="abstract glossdef">
+    A Pipeline that has the capability to be suspended when an endpoint fails during the processing of its documents.
+    You can troubleshoot the suspended Pipeline on the SnapLogic Dashboard and resume the Pipeline when the endpoint is up again.
+  </div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title57" lang="en-US" id="scheduled-task">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title57">Scheduled Task</h2>
+  <div class="abstract glossdef">A method to execute your Pipelines in a fixed schedule.</div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title58" lang="en-US" id="score-threshold">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title58">Score Threshold</h2>
+  <div class="abstract glossdef">An AutoLink feature that filters suggestions based on the score.</div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title59" lang="en-US" id="score">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title59">Score</h2>
+  <div class="abstract glossdef">
+    An AutoLink feature that indicates the confidence level of a match.
+    For example, a score of 5 stars is a match in which the model has high confidence.
+  </div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title60" lang="en-US" id="seed-value">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title60">Seed Value</h2>
+  <div class="abstract glossdef">
+    A numeric value that is used by the randomizer in identifying the set of a sampled or shuffled dataset in machine learning algorithms.
+    Using the same seed value helps you generate the same sample or shuffling order.
+  </div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title61" lang="en-US" id="sldb">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title61">SLDB</h2>
+  <div class="abstract glossdef">(SnapLogic DataBase Service) An internal component of the SnapLogic Control Plane.</div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title62" lang="en-US" id="slfs">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title62">SLFS</h2>
+  <div class="abstract glossdef">(SnapLogic File System) A sub-component of SLDB that allows you to upload and download files to and from SnapLogic IIP, such as when you use File Reader and File Writer Snaps in your Pipelines.</div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title63" lang="en-US" id="slpropz-file">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title63">SLPROPZ file</h2>
+  <div class="abstract glossdef">A file that contains the configuration details of a Snaplex node.</div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title64" lang="en-US" id="snap-pack">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title64">Snap Pack</h2>
+  <div class="abstract glossdef">A logical grouping of Snaps based on functionality or an application endpoint.</div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title65" lang="en-US" id="snap">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title65">Snap</h2>
+  <div class="abstract glossdef">An object in the SnapLogic application that introspects the source and target and performs a single complete function, such as read, write, or act on data.</div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title66" lang="en-US" id="snaplex-dashboard">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title66">Snaplex Dashboard</h2>
+  <div class="abstract glossdef">A tab in SnapLogic Dashboard that lets you view Snaplex statistics.</div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title67" lang="en-US" id="snaplex-slot">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title67">Snaplex Slot</h2>
+  <div class="abstract glossdef">
+    An abstraction used to quantify the resource requirements/usage for a Pipeline.
+    Each Snap in a Pipeline consumes a slot during execution and each slot is a running thread on a Snaplex node.
+  </div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title68" lang="en-US" id="snaplex">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title68">Snaplex</h2>
+  <div class="abstract glossdef">
+    The data processing engine used for Pipeline execution.
+    A Snaplex contains multiple nodes and can be a Cloudplex or a Groundplex.
+  </div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title69" lang="en-US" id="snaplogic-cloud-pattern-catalog">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title69">SnapLogic Cloud Pattern Catalog</h2>
+  <div class="abstract glossdef">An extensive library of Pipeline patterns built and maintained by SnapLogic.</div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title70" lang="en-US" id="snaplogic-dashboard">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title70">SnapLogic Dashboard</h2>
+  <div class="abstract glossdef">A SnapLogic reporting interface that provides information on Pipeline runs and Snaplex instances.</div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title71" lang="en-US" id="snaplogic-data-science">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title71">SnapLogic Data Science</h2>
+  <div class="abstract glossdef">A self-service SnapLogic platform for end-to-end machine learning that offers a low-code approach to data acquisition, data exploration and preparation, and model training and validation.</div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title72" lang="en-US" id="snaplogic-designer">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title72">SnapLogic Designer</h2>
+  <div class="abstract glossdef">SnapLogic user interface where you can select Snaps from the available Snap Packs, build and manage Pipelines, and choose from Pipeline Patterns.</div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title73" lang="en-US" id="snaplogic-expressions">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title73">SnapLogic Expressions</h2>
+  <div class="abstract glossdef">
+    Used in Snaps to manipulate data.
+    In Standard mode, the expressions are based on a subset of JavaScript and act accordingly.
+  </div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title74" lang="en-US" id="snaplogic-manager">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title74">SnapLogic Manager</h2>
+  <div class="abstract glossdef">The administration console for SnapLogic from where you can manage users, projects, assets, security settings, and view account and Snap statistics.</div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title75" lang="en-US" id="snaps-catalog">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title75">Snaps Catalog</h2>
+  <div class="abstract glossdef">The tab in SnapLogic Designer that contains the list of available Snaps and the version of the Snap Pack. The Snaps Catalog also enables you to search for Snaps.</div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title76" lang="en-US" id="snc">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title76">SNC</h2>
+  <div class="abstract glossdef">
+    (Secure Network Communications) A proprietary security mechanism that SAP has developed to integrate SAP NetWeaver Single Sign-On or an external security product with SAP systems.
+    With SNC, you receive application-level, end-to-end security.
+    All communication that takes place between two SNC-protected components is secured (for example, between the SAP GUI for Windows and the application server).
+    Learn more about Secure Network Communications (SNC) in the SAP Help Portal for more information.
+  </div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title77" lang="en-US" id="sql-expressions">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title77">SQL Expressions</h2>
+  <div class="abstract glossdef">A combination of one or more values, operators, and SQL functions that evaluate to a value.</div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title78" lang="en-US" id="stable-snaps">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title78">Stable Snaps</h2>
+  <div class="abstract glossdef">
+    The most stable set of Snaps as recommended by SnapLogic.
+    Latest Snaps may or may not work properly immediately after a release.
+    For example, for a Production Org, you might choose Stable Snaps to ensure everything works as expected.
+    But you might configure a Developer Org to always have the Latest Snaps to test new features.
+  </div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title79" lang="en-US" id="standard-mode-pipeline">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title79">Standard Mode Pipeline</h2>
+  <div class="abstract glossdef">
+    The default Pipeline type.
+    All regular Snaps can be used in this Pipeline.
+  </div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title80" lang="en-US" id="stratified-sampling">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title80">Stratified Sampling</h2>
+  <div class="abstract glossdef">
+    A machine learning sampling technique that results in the same number of data points from each group.
+    For example, if we have 100 people from 10 countries, and we implement stratified sampling at 10%, the result will contain one person from each country.
+  </div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title81" lang="en-US" id="subscription-feature">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title81">Subscription Feature</h2>
+  <div class="abstract glossdef">
+    SnapLogic Organization-level features that you can enable by contacting your SnapLogic representative.
+    Some current subscription features are Native API Manager, Resumable Pipelines, and Ultra Pipeline Tasks.
+  </div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title82" lang="en-US" id="supervised-learning">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title82">Supervised learning</h2>
+  <div class="abstract glossdef">
+    Applicable to SnapLogic Data Science, it is the task of inferring a function from labeled training data.
+    The training data consists of a set of training examples.
+  </div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title83" lang="en-US" id="suspended-pipeline">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title83">Suspended Pipeline</h2>
+  <div class="abstract glossdef">A Resumable Pipeline whose endpoint has failed or is offline.</div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title84" lang="en-US" id="synthesized-pipeline">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title84">Synthesized Pipeline</h2>
+  <div class="abstract glossdef">
+    A Pipeline that is generated using Pipeline metadata and existing Snaps on the Canvas.
+    Iris provides synthesized Pipelines as a part of the list of suggested Pipelines provided by Pipeline Recommendation.
+  </div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title85" lang="en-US" id="table">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title85">Table</h2>
+  <div class="abstract glossdef">
+    A type of Asset that you can create in Manager or through a Pipeline with the Catalog Insert Snap.
+    You use this Asset to collect metadata and schema information about the source data being run through your Pipelines.
+    You can modify this data by editing your Tables in Manager.
+  </div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title86" lang="en-US" id="triggered-task">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title86">Triggered Task</h2>
+  <div class="abstract glossdef">
+    A method to execute your Pipelines through an HTTP request.
+    You can also feed input data into a Pipeline and receive the output using an HTTP request.
+  </div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title87" lang="en-US" id="ultra-pipeline">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title87">Ultra Pipeline</h2>
+  <div class="abstract glossdef">
+    Ultra mode enables a Pipeline to continuously consume documents from external sources.
+    Typically, the Ultra Pipelines are used for tasks that are not compatible with triggered tasks or require low-latency processing of their inputs.
+    By default, only one document is supported as input and output.
+  </div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title88" lang="en-US" id="unsupervised-learning">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title88">Unsupervised learning</h2>
+  <div class="abstract glossdef">Applicable to SnapLogic Data Science, it is a technique in which you can draw inferences from datasets consisting of data without labeled responses.</div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title89" lang="en-US" id="upstream-snap">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title89">Upstream Snap</h2>
+  <div class="abstract glossdef">
+    The preceding Snap of any given Snap in a Pipeline.
+    The output of the upstream Snap is the input of the given Snap.
+  </div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title90" lang="en-US" id="validate-pipeline">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title90">Validate Pipeline</h2>
+  <div class="abstract glossdef">
+    A Pipeline execution operation that executes the Pipeline partially.
+    In Read-type Snaps such as MySQL Select, a preview dataset is also generated.
+    The maximum number of records in a preview dataset is 50.
+    This mode of execution does not impact databases and/or endpoints but is useful in ensuring that a Pipeline is configured correctly.
+  </div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title91" lang="en-US" id="variance">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title91">Variance</h2>
+  <div class="abstract glossdef">
+    Applicable to SnapLogic Data Science, variance indicates how spread out the data (numbers) is in a dataset.
+    In simple terms, variance represents the distribution of data in a dataset.
+  </div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title92" lang="en-US" id="virtual-columns">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title92">Virtual Columns</h2>
+  <div class="abstract glossdef">Columns in a table whose values are generated based on a formula are virtual columns.</div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title93" lang="en-US" id="weighted-stratified-sampling">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title93">Weighted Stratified Sampling</h2>
+  <div class="abstract glossdef">Applicable to SnapLogic Data Science, it is a sampling technique similar to Stratified Sampling, except that the ratio of data points per group is maintained.</div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title94" lang="en-US" id="workbench">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title94">Workbench</h2>
+  <div class="abstract glossdef">The portion of SnapLogic Designer that consists of the canvas, menus, and toolbars.</div>
+
+</article><article class="topic concept glossentry nested1" aria-labelledby="ariaid-title95" lang="en-US" id="workspace">
+
+  <h2 class="title glossterm topictitle2" id="ariaid-title95">Workspace</h2>
+  <div class="abstract glossdef">The user session that you log into.</div>
+
+</article></article></article></main><footer role="contentinfo"><div class="footer">
+
+  <div class="ftrlegal">
+    <ul class="pipelist">
+      <li><b>Have feedback?</b> Email <a href="mailto:documentation@snaplogic.com">documentation@snaplogic.com</a></li>
+      <li><b>Ask a question</b> in the <a href="https://community.snaplogic.com/">SnapLogic Community</a></li>
+    </ul>
+    <p class="copyright"><a href="https://snaplogic-docs.github.io/live/refs/copyright.html">© 2017-2022 SnapLogic, Inc.</a></p>
+  </div>
+
+  <script src="/k/sldocs.js"></script>
+  <script src="/theme/sldocs.js"></script>
+</div></footer></body></html>

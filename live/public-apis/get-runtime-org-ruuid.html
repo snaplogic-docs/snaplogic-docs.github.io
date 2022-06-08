@@ -1,11 +1,12 @@
 <!DOCTYPE html
   SYSTEM "about:legacy-compat">
-<html lang="en-us"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2022"><meta name="generator" content="DITA-OT"><link rel="stylesheet" type="text/css" href="../theme/commonltr.css"><link rel="stylesheet" type="text/css" href="../theme/sldocs.css"><title>Retrieve Info About a Task</title>
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<html lang="en-us"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2022"><meta name="generator" content="DITA-OT"><title>Retrieve Info About a Task</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!-- <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script> -->
   <!-- <script src="https://kit.fontawesome.com/enter-your-own-fontawesome-code.js" crossorigin="anonymous"></script> -->
-</head><body id="get-runtime-org-ruuid"><header role="banner"><div class="header">
-  <a href="/index.html"><img src="https://snaplogic-docs.github.io/k/LogoN.svg" alt="SnapLogic Logo"> <ph class="site-title">Documentation</ph></a>
-</div></header><nav role="toc"><ul><li><span>Getting Started</span></li><li><span>Release Notes</span></li><li><span>SnapLogic Concepts</span><ul><li><span>Snaps and Pipelines</span><ul><li><span>Snap Reference</span></li></ul></li><li><span>Tasks</span></li><li><span>Flows</span></li></ul></li><li><span>SnapLogic Designer</span></li><li><span>SnapLogic Manager</span><ul><li><span>Manager</span><ul><li><a href="../manager/manager-features.html">SnapLogic Features for Orgs</a></li></ul></li></ul></li><li><span>SnapLogic Monitoring Dashboard</span></li><li><a href="../sl-studio/about-studio.html">BETA | SnapLogic Studio</a><ul><li><span>Develop</span></li><li><span>Analyze</span><ul><li><a href="../sl-studio/analyze-execution.html">BETA | Analyze: Execution Overview</a><ul><li><a href="../sl-studio/analyze-execution-detail.html">BETA | Analyze: Execution Details</a></li></ul></li></ul></li><li><span>Explore</span></li></ul></li><li><span>SnapLogic Platform</span></li><li><span>Administration and Configuration</span></li><li><a href="../apim/apim-about.html">SnapLogic API Management</a><ul><li><a href="../apim/api-lifecycle.html">The API and Proxy Lifecycle</a></li><li><span>APIs</span><ul><li><a href="../apim/api-create-design-first.html">Create API Using Design First</a></li><li><a href="../apim/api-create-existing-project.html">Create API Using Existing Project</a></li><li><a href="../apim/api-create-empty.html">Create Empty API</a></li><li><a href="../apim/api-enable-try-it-out.html">Enable "Try It Out" for your API</a></li></ul></li><li><a href="../apim/proxies.html">Proxies</a><ul><li><a href="../apim/proxy-create.html">Create Proxy</a></li><li><a href="../apim/proxy-details.html">Proxy Details</a></li><li><a href="../apim/proxy-endpoints.html">Proxy Endpoints</a></li><li><a href="../apim/proxy-endpoint-details.html">Proxy Endpoint Details</a></li><li><a href="../apim/proxy-mapping-rules.html">Proxy Endpoint Mapping Rules</a><ul><li><a href="../apim/proxy-mapping-rules-view-list.html">View Mapping Rules</a></li><li><a href="../apim/proxy-mapping-rules-create.html">Create Proxy Mapping Rule</a></li><li><a href="../apim/proxy-mapping-rules-edit.html">Edit Proxy Mapping Rule</a></li><li><a href="../apim/proxy-mapping-rules-delete.html">Delete Proxy Mapping Rule</a></li><li><a href="../apim/proxy-mapping-rules-prioritize.html">Prioritize Proxy Mapping Rules</a></li></ul></li><li><a href="../apim/proxy-security-policies.html">Proxy Security Policies</a></li></ul></li><li><span>Security Policies</span></li><li><span>API Manager</span><ul><li><a href="../apim/tryapi-cors-settings.html">Setting Up a CORS Restriction for Try It Out</a></li></ul></li><li><span>Portal Manager</span><ul><li><a href="../apim/portalmgr-settings.html">Portal Manager Settings</a></li></ul></li></ul></li><li><a href="../public-apis/public-apis.html">SnapLogic Public APIs</a><ul><li><a href="../public-apis/apis-activity.html">Activity APIs</a><ul><li><a href="../public-apis/get-activities-org.html">Retrieve Activities in Org</a></li></ul></li><li><a href="../public-apis/apis-asset.html">Asset APIs</a><ul><li><a href="../public-apis/post-assetapi-acl-projpath.html">Grant Access to a Project or Space</a></li><li><a href="../public-apis/get-assetapi-acl-projpath.html">Retrieve Privileges of Current User</a></li><li><a href="../public-apis/delete-assetapi-acl-projpath.html">Revoke All Project Access from a User or Group</a></li><li><a href="../public-apis/post-assetapi-project-projpath.html">Create New Project or Project Space</a></li><li><a href="../public-apis/put-assetapi-project-projpath.html">Rename a Project or Project Space</a></li></ul></li><li><a href="../public-apis/apis-log.html">Log APIs</a><ul><li><a href="../public-apis/get-log-org.html">Retrieve Pipeline Logs</a></li></ul></li><li><a href="../public-apis/apis-pipeline-task.html">Pipeline and Task APIs</a><ul><li><a href="../public-apis/get-runtime-org.html">Retrieve Info About Tasks Matching a Filter</a></li><li class="active"><a href="../public-apis/get-runtime-org-ruuid.html">Retrieve Info About a Task</a></li><li><a href="../public-apis/get-runtime-apistats-org.html">Retrieve Concurrent and Daily Task Metrics</a></li><li><a href="../public-apis/get-runtime-apistats-org-daily.html">Retrieve Daily Task Metrics</a></li><li><a href="../public-apis/get-runtime-apistats-org-concurrent.html">Retrieve Concurrent Task Metrics</a></li><li><a href="../public-apis/post-runtime-start-org-ruuid.html">Resume a Resumable Task</a></li><li><a href="../public-apis/post-runtime-stop-org-ruuid.html">Stop a Task</a></li></ul></li><li><a href="../public-apis/apis-project.html">Project APIs</a><ul><li><a href="../public-apis/post-project-checkout-projpath.html">Check Out Project Files from GitHub</a></li><li><a href="../public-apis/post-project-pull-projpath.html">Pull the Latest Project Files from GitHub</a></li><li><a href="../public-apis/get-repo-status-projpath.html">Retrieve the Status of the GitHub Repository</a></li><li><a href="../public-apis/post-project-migrate-projpath.html">Migrate a Project to Another Org</a></li><li><a href="../public-apis/get-migrate-status-token.html">Retrieve the Status of a Migration</a></li></ul></li><li><a href="../public-apis/apis-snaplex.html">Snaplex APIs</a><ul><li><a href="../public-apis/post-snaplex-restart-plexpath-hostname.html">Request a Restart of a Node</a></li><li><a href="../public-apis/post-snaplex-maintenance-plexpath-hostname.html">Switch a Node to Maintenance Mode</a></li><li><a href="../public-apis/get-snaplex-config-plexpath.html">Retrieve Config Info for a Groundplex</a></li><li><a href="../public-apis/get-snaplex-org.html">Retrieve Info About Nodes</a></li><li><a href="../public-apis/post-snaplex-version-plexpath.html">Update the Snaplex to a Specific Version</a></li><li><a href="../public-apis/post-snaplex-version-latest-plexpath.html">Updates the Snaplex to the Latest Version</a></li><li><a href="../public-apis/get-snaplex-version.html">Get All Versions of the Snaplex Package</a></li><li><a href="../public-apis/get-snaplex-version-latest.html">Get the Latest Active Version of the Snaplex Package</a></li></ul></li><li><a href="../public-apis/apis-user-and-group.html">User and Group APIs</a><ul><li><a href="../public-apis/post-users.html">Create a User</a></li><li><a href="../public-apis/get-users-email.html">Retrieve Info About a User</a></li><li><a href="../public-apis/put-users-email.html">Update a User</a></li><li><a href="../public-apis/delete-users-email.html">Delete a User</a></li><li><a href="../public-apis/post-groups.html">Create a Group</a></li><li><a href="../public-apis/get-groups-org.html">Retrieve the List of Groups in an Org</a></li><li><a href="../public-apis/get-groups-org-group.html">Retrieve Info About a Group</a></li><li><a href="../public-apis/patch-groups-org-group.html">Add or Remove Users from a Group</a></li><li><a href="../public-apis/put-groups-org-group.html">Replace the Member List of a Group</a></li><li><a href="../public-apis/delete-groups-org-group.html">Delete a Group</a></li></ul></li><li><a href="../public-apis/api-perms-vs-manager-perms.html">Permissions in Manager and in APIs</a></li><li><a href="../public-apis/ref-activity-metadata.html">Reference: Activity Metadata</a></li></ul></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+<link rel="stylesheet" type="text/css" href="../theme/commonltr.css"><link rel="stylesheet" type="text/css" href="../theme/sldocs.css"></head><body id="get-runtime-org-ruuid"><header role="banner"><div class="header">
+  <a href="/index.html"><img class="noborder" src="https://snaplogic-docs.github.io/k/LogoN.svg" alt="SnapLogic Logo"> <ph class="site-title">Documentation</ph></a>
+</div></header><nav class="toc" role="navigation"><ul><li><span>Release Notes</span><ul><li><a href="../Chunk1889420585.html#Chunk1889420585">2022 May (4.29.0)</a><ul></ul></li></ul></li><li><span>Getting Started</span></li><li><a href="../concepts/snaplogic-concepts.html">Concepts</a></li><li><a href="../concepts/snaplogic-features.html">Features</a><ul><li><a href="../concepts/manager-features.html">SnapLogic Features for Orgs</a></li></ul></li><li><a href="../snaps/snaps-about.html">Snaps</a></li><li><a href="../pipelines/pipelines-about.html">Pipelines</a></li><li><a href="../tasks/tasks-about.html">Tasks</a></li><li><a href="../studio/studio-about.html">PREVIEW | SnapLogic Studio</a><ul><li><span>Develop</span></li><li><span>Analyze</span><ul><li><a href="../studio/analyze-execution.html">PREVIEW | Analyze: Execution Overview</a><ul><li><a href="../studio/analyze-execution-detail.html">PREVIEW | Analyze: Execution Details</a></li></ul></li></ul></li><li><span>Explore</span></li></ul></li><li><a href="../designer/designer-about.html">Designer</a></li><li><a href="../manager/manager-about.html">Manager</a></li><li><a href="../dashboard/dashboard-about.html">Dashboard</a></li><li><a href="../apim/apim-about.html">SnapLogic API Management</a><ul><li><a href="../apim/api-lifecycle.html">The API and Proxy Lifecycle</a></li><li><span>APIs</span><ul><li><a href="../apim/api-create-design-first.html">Create API Using Design First</a></li><li><a href="../apim/api-create-existing-project.html">Create API Using Existing Project</a></li><li><a href="../apim/api-create-empty.html">Create Empty API</a></li><li><a href="../apim/api-enable-try-it-out.html">Enable "Try It Out" for your API</a></li></ul></li><li><a href="../apim/proxies.html">Proxies</a><ul><li><a href="../apim/proxy-create.html">Create Proxy</a></li><li><a href="../apim/proxy-details.html">Proxy Details</a></li><li><a href="../apim/proxy-endpoints.html">Proxy Endpoints</a></li><li><a href="../apim/proxy-endpoint-details.html">Proxy Endpoint Details</a></li><li><a href="../apim/proxy-mapping-rules.html">Proxy Endpoint Mapping Rules</a><ul><li><a href="../apim/proxy-mapping-rules-view-list.html">View Mapping Rules</a></li><li><a href="../apim/proxy-mapping-rules-create.html">Create Proxy Mapping Rule</a></li><li><a href="../apim/proxy-mapping-rules-edit.html">Edit Proxy Mapping Rule</a></li><li><a href="../apim/proxy-mapping-rules-delete.html">Delete Proxy Mapping Rule</a></li><li><a href="../apim/proxy-mapping-rules-prioritize.html">Prioritize Proxy Mapping Rules</a></li></ul></li><li><a href="../apim/proxy-security-policies.html">Proxy Security Policies</a></li></ul></li><li><span>Security Policies</span></li><li><span>API Manager</span><ul><li><a href="../apim/tryapi-cors-settings.html">Setting Up a CORS Restriction for Try It Out</a></li></ul></li><li><span>Portal Manager</span><ul><li><a href="../apim/portalmgr-settings.html">Portal Manager Settings</a></li></ul></li></ul></li><li><a href="../public-apis/public-apis.html">SnapLogic Public APIs</a><ul><li><a href="../public-apis/apis-activity.html">Activity APIs</a><ul><li><a href="../public-apis/get-activities-org.html">Retrieve Activities in Org</a></li></ul></li><li><a href="../public-apis/apis-asset.html">Asset APIs</a><ul><li><a href="../public-apis/post-assetapi-acl-projpath.html">Grant Access to a Project or Space</a></li><li><a href="../public-apis/get-assetapi-acl-projpath.html">Retrieve Privileges of Current User</a></li><li><a href="../public-apis/delete-assetapi-acl-projpath.html">Revoke All Project Access from a User or Group</a></li><li><a href="../public-apis/post-assetapi-project-projpath.html">Create New Project or Project Space</a></li><li><a href="../public-apis/put-assetapi-project-projpath.html">Rename a Project or Project Space</a></li><li><a href="../public-apis/delete-assetapi-project-projpath.html">Delete a Project or Project Space</a></li></ul></li><li><a href="../public-apis/apis-log.html">Log APIs</a><ul><li><a href="../public-apis/get-log-org.html">Retrieve Pipeline Logs</a></li></ul></li><li><a href="../public-apis/apis-pipeline-task.html">Pipeline and Task APIs</a><ul><li><a href="../public-apis/get-runtime-org.html">Retrieve Info About Tasks Matching a Filter</a></li><li class="active"><a href="../public-apis/get-runtime-org-ruuid.html">Retrieve Info About a Task</a></li><li><a href="../public-apis/get-runtime-apistats-org.html">Retrieve Concurrent and Daily Task Metrics</a></li><li><a href="../public-apis/get-runtime-apistats-org-daily.html">Retrieve Daily Task Metrics</a></li><li><a href="../public-apis/get-runtime-apistats-org-concurrent.html">Retrieve Concurrent Task Metrics</a></li><li><a href="../public-apis/post-runtime-start-org-ruuid.html">Resume a Resumable Task</a></li><li><a href="../public-apis/post-runtime-stop-org-ruuid.html">Stop a Task</a></li></ul></li><li><a href="../public-apis/apis-project.html">Project APIs</a><ul><li><a href="../public-apis/post-project-checkout-projpath.html">Check Out Project Files from GitHub</a></li><li><a href="../public-apis/post-project-pull-projpath.html">Pull the Latest Project Files from GitHub</a></li><li><a href="../public-apis/get-repo-status-projpath.html">Retrieve the Status of the GitHub Repository</a></li><li><a href="../public-apis/post-project-migrate-projpath.html">Migrate a Project to Another Org</a></li><li><a href="../public-apis/get-migrate-status-token.html">Retrieve the Status of a Migration</a></li></ul></li><li><a href="../public-apis/apis-snaplex.html">Snaplex APIs</a><ul><li><a href="../public-apis/post-snaplex-restart-plexpath-hostname.html">Request a Restart of a Node</a></li><li><a href="../public-apis/post-snaplex-maintenance-plexpath-hostname.html">Switch a Node to Maintenance Mode</a></li><li><a href="../public-apis/get-snaplex-config-plexpath.html">Retrieve Config Info for a Groundplex</a></li><li><a href="../public-apis/get-snaplex-org.html">Retrieve Info About Nodes</a></li><li><a href="../public-apis/post-snaplex-version-plexpath.html">Update the Snaplex to a Specific Version</a></li><li><a href="../public-apis/post-snaplex-version-latest-plexpath.html">Updates the Snaplex to the Latest Version</a></li><li><a href="../public-apis/get-snaplex-version.html">Get All Versions of the Snaplex Package</a></li><li><a href="../public-apis/get-snaplex-version-latest.html">Get the Latest Active Version of the Snaplex Package</a></li></ul></li><li><a href="../public-apis/apis-user-and-group.html">User and Group APIs</a><ul><li><a href="../public-apis/post-users.html">Create a User</a></li><li><a href="../public-apis/get-users-email.html">Retrieve Info About a User</a></li><li><a href="../public-apis/put-users-email.html">Update a User</a></li><li><a href="../public-apis/delete-users-email.html">Delete a User</a></li><li><a href="../public-apis/post-groups.html">Create a Group</a></li><li><a href="../public-apis/get-groups-org.html">Retrieve the List of Groups in an Org</a></li><li><a href="../public-apis/get-groups-org-group.html">Retrieve Info About a Group</a></li><li><a href="../public-apis/patch-groups-org-group.html">Add or Remove Users from a Group</a></li><li><a href="../public-apis/put-groups-org-group.html">Replace the Member List of a Group</a></li><li><a href="../public-apis/delete-groups-org-group.html">Delete a Group</a></li></ul></li><li><a href="../public-apis/api-perms-vs-manager-perms.html">Permissions in Manager and in APIs</a></li><li><a href="../public-apis/ref-activity-metadata.html">Reference: Activity Metadata</a></li></ul></li><li><a href="../fdl/fdl-about.html">Fast Data Loader</a></li><li><a href="../snaplexes/snaplexes-about.html">Snaplexes</a></li><li><a href="../security/accounts-about.html">Accounts</a></li><li><a href="../security/users-about.html">Users</a></li><li><a href="../security/groups-about.html">Groups</a></li><li><a href="../security/orgs-about.html">Orgs</a></li><li><a href="../security/permissions-about.html">Permissions</a></li><li><a href="../security/policies-about.html">Policies</a></li><li><span>References</span><ul><li><a href="../glossary/glossary.html#glossary">Glossary</a><ul></ul></li></ul></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1">
 
   <h1 class="title topictitle1" id="ariaid-title1">Retrieve Info About a Task</h1>
 
@@ -112,7 +113,7 @@
         <div class="div">
           <p class="p">Specify <code class="ph codeph">Basic</code> for authorization and <code class="ph codeph">application/json</code> for content type.</p>
 
-          <pre class="pre codeblock normalize-space" id="get-runtime-org-ruuid__d71e726"><code>   Authorization: Basic {your_encoded_security_credentials}
+          <pre class="pre codeblock normalize-space" id="get-runtime-org-ruuid__request-hdr"><code>   Authorization: Basic {your_encoded_security_credentials}
   Content-Type: application/json
 </code></pre>
         </div>
@@ -147,6 +148,11 @@
 
       <div class="sectiondiv">
         <p class="p sectiondivtitle">Response Body</p>
+
+        <div class="note note note_note"><span class="note__title">Note:</span> 
+          The results include only the Task runs that you have permissions to view.
+          Org Admins can view all Task runs.
+        </div>
 
         <pre class="pre codeblock normalize-space lang-json"><code>   {
     "response_map": {
@@ -368,208 +374,160 @@
               <th class="entry valign-top" id="get-runtime-org-ruuid__section-api-response__entry__7">Description</th>
             </tr>
           </thead><tbody class="tbody">
-
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">feed_call</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">Boolean</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">If <code class="ph codeph">true</code>, the Pipeline increments tha API meter. ???</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">If <code class="ph codeph">true</code>, the Pipeline increments tha API meter.</td>
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">subpipeline_parameters</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">object</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">If the Task was triggered by a parent Pipeline, the key-value pairs of parameters passed to this Task. ???</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">If the Task was triggered by a parent Pipeline, the key-value pairs of parameters passed to this Task.</td> 
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">llfeed_status</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">object</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">???
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">
                   <ul class="ul">
-                    <li class="li"><code class="ph codeph">message_history</code>. (array) An array of strings containing the message history.</li>
-                    <li class="li"><code class="ph codeph">messages</code>. (array) An array of strings containing messages.</li>
+                    <li class="li"><code class="ph codeph">message_history</code>. (array) The history of messages received from a FeedMaster.</li> 
+                    <li class="li"><code class="ph codeph">messages</code>. (array) An array of strings containing recent messages from a FeedMaster during Task run. 
+                      Each message includes the following timestamps:
+                      <ul class="ul">
+                        <li class="li"><code class="ph codeph">recv_time</code>. The time when a FeedMaster node receives the message to send to the JCC node.</li>
+                        <li class="li"><code class="ph codeph">start_time</code>. The time when the JCC node receives the message from the FeedMaster node.</li>
+                        <li class="li"><code class="ph codeph">ack_time</code>. The time when the JCC node acknowledges the message and removes it.</li>
+                        <li class="li"><code class="ph codeph">reply_time</code>.  The time when the JCC node replies to a message sent from the FeedMaster node.</li>
+                      </ul>
+                    </li>
                     <li class="li"><code class="ph codeph">documents_count</code>. (integer) The number of documents processed.</li>
-                    <li class="li"><code class="ph codeph">max_in_flight</code>. (integer) <span class="ph">The maximum number of concurrent Task runs that the Org is allowed.</span> ???</li>
-                    <li class="li"><code class="ph codeph">summary</code>. (string) A summary of ???</li>
+                    <li class="li"><code class="ph codeph">max_in_flight</code>. (integer) <span class="ph">The maximum number of concurrent Task runs that the Org is allowed.</span></li> 
+                    <li class="li"><code class="ph codeph">summary</code>. (string) A summary of the feed status.</li> 
                   </ul>
                 </td>
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">class_fqid</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7"><span class="ph">The fully-qualified ID of a Snap. It consists of the Snap class ID and the class version.</span></td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The fully-qualified ID of a Snap.
+                  <span class="ph">Format:</span> <code class="ph codeph">{Snap_class_id}_{class_version}</code>
+                </td>
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">snode_id</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7"><span class="ph">The ID Of the Snaplex node that processed the Task run.</span></td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The ID of the Snaplex node that contains the Pipeline instance.</td>
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">ttl</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">integer</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">A Task's ??? time to live, expressed in milliseconds ???.</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">A Task's time to live, expressed in milliseconds.</td> 
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">org_snode_id</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7"><span class="ph">The ID of the Snaplex node that hosts the Org.</span></td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The ID of the Snaplex node that hosts the Org of the Pipeline.</td>
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">cc_prepare_end_ms</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">integer</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">???, expressed in milliseconds.</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The time when the JCC node completed preparing the Task, expressed in milliseconds.</td>
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">parent_path</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The path to the parent Pipeline, if this Task is a child.</td>
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">delete_time</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">When the Task was deleted. ???
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">When the Task was deleted. 
                   <p class="p"><span class="ph"><span class="ph">Format:</span> <a class="xref" href="https://www.w3.org/TR/NOTE-datetime" target="_blank" rel="external noopener">UTC</a></span></p>
                 </td>
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">error_list</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">array</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">???</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">Errors encountered at runtime.</td>
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">child_count</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">integer</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The number of children of this Task's Pipeline. ???</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The number of children of this Task's Pipeline.</td> 
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">data_locations</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">array</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">An array of objects containing information about each data location (source or target). ???</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">An array of objects containing information about each data location (source or target).</td> 
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">env_map</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">object</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">???</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">Information about the Snaplex environment.</td>
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">restart_attempts</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">integer</td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The number of attempts to restart the Task after a failure or suspension.</td>
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">error_documents_count</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">integer</td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The number of documents that had errors.</td>
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">env_map_list</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">array</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">An array of Objects containing:
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">An array of objects containing:
                   <ul class="ul">
-                    <li class="li"><code class="ph codeph">ciphertext</code>. (string) ???</li>
-                    <li class="li"><code class="ph codeph">sym_key</code>. (Object) An object containing the <code class="ph codeph">alias</code> and <code class="ph codeph">key</code> of ???.</li>
+                    <li class="li"><code class="ph codeph">ciphertext</code>. (string)</li> 
+                    <li class="li"><code class="ph codeph">sym_key</code>. (Object) An object containing the <code class="ph codeph">alias</code> and <code class="ph codeph">key</code>.</li> 
                   </ul>
                 </td>
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">statistics_time_stamp</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">???
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7"> The time when the JCC node collects statistics.
                   <p class="p"><span class="ph"><span class="ph">Format:</span> <a class="xref" href="https://www.w3.org/TR/NOTE-datetime" target="_blank" rel="external noopener">UTC</a></span></p>
                 </td>
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">job_trigger</code></td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string ???</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">???</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td> 
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7"></td> 
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">cc_fast_push_expire_time_ms</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">integer</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">???, expressed in milliseconds.</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">, expressed in milliseconds.</td> 
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">fault_injections</code></td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string ???</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">???</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string </td> 
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7"></td> 
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">slserver_lease_expire_time</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">???
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7"> 
                   <p class="p"><span class="ph"><span class="ph">Format:</span> <a class="xref" href="https://www.w3.org/TR/NOTE-datetime" target="_blank" rel="external noopener">UTC</a></span></p>
                 </td>
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">cc_poll_ms</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">integer</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">???, expressed in milliseconds.</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The time when the JCC node pushes the runtime status, expressed in milliseconds.</td> 
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">instance_id</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The UUID of the Task run. ???</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The identifier of the Task instance; the same as the Pipeline runtime ID.</td>
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">mode</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The mode of the Task run. ???
-                  <div class="p"><span class="ph">Possible values:</span>
-                    <ul class="ul">
-                      <li class="li"><code class="ph codeph">standard</code></li>
-                      <li class="li">???</li>
-                    </ul>
-                  </div>
-                </td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7"></td>
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">async</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">Boolean</td>
@@ -577,8 +535,6 @@
                   <p class="p">Learn more: <a class="xref" href="https://docs-snaplogic.atlassian.net/wiki/spaces/SD/pages/986285123/Understanding+Synchronous+and+Asynchronous+Execution+of+Triggered+Tasks?search_id=afeaec24-704d-45c9-af23-0c33f117fb44" target="_blank" rel="external noopener">Understanding Synchronous and Asynchronous Execution of Triggered Tasks</a></p>
                 </td>
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">pipe_invoker</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
@@ -586,281 +542,209 @@
                   <div class="p"><span class="ph">Possible values:</span>
                     <ul class="ul">
                       <li class="li"><code class="ph codeph">always_on</code></li>
-                      <li class="li"><code class="ph codeph">???</code></li>
-                      <li class="li"><code class="ph codeph">???</code></li>
+                      
+                      
                     </ul>
                   </div>
                 </td>
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">create_time</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The time when the Task run was created. ???
-                  <p class="p"><span class="ph"><span class="ph">Format:</span> <a class="xref" href="https://www.w3.org/TR/NOTE-datetime" target="_blank" rel="external noopener">UTC</a></span></p>
-                </td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The time when the Task was created.</td>
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">duration</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">integer</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The length of time the Task ran, expressed in milliseconds. ???</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The duration of the Task run.</td> 
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">notification</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">object</td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">Information about recipients of notifications.</td>
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">label</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The label or name of the Task run.</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The label for the Pipeline.</td>
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">state</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The status of the Task run. ???
-                  <div class="p"><span class="ph">Valid values:</span>
-                    <ul class="ul">
-                      <li class="li">started</li>
-                      <li class="li">???</li>
-                    </ul>
-                  </div>
-                </td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7"></td>
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">replicaset_label</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The label of ???</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7"></td> 
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">invoker</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The user that invoked the Task run. ???</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The user who invoked the API.</td>
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">cc_user</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The user that ???</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7"></td> 
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">time_stamp</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The time when the Task run started. ???
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The timestamp of the current operation, regardless of the runtime state.
                   <p class="p"><span class="ph"><span class="ph">Format:</span> <a class="xref" href="https://www.w3.org/TR/NOTE-datetime" target="_blank" rel="external noopener">UTC</a></span></p>
                 </td>
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">cc_external_uri</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The URI of the node where the Task is running. ???</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The external URI of the JCC node where the Task is running.</td>
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">partition_snode_id</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The ID of the node partition where the Task is running. ???</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The ID of the Snaplex node partition where the Task ran.</td> 
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">lint_id_list</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">array</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">???</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7"></td> 
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">reason</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The reason for running the Task, if specified. ???</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The reason for the failure, if any.</td>
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">threads</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">array</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">???</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7"></td> 
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">prepare_handoff_timestamp</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The time when ???
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The time when the Task preparation is completed. 
                   <p class="p"><span class="ph"><span class="ph">Format:</span> <a class="xref" href="https://www.w3.org/TR/NOTE-datetime" target="_blank" rel="external noopener">UTC</a></span></p>
                 </td>
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">slot_count</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">integer</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">???</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7"></td> 
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">end_stage</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">???
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7"> 
                   <div class="p"><span class="ph">Possible values:</span>
                     <ul class="ul">
                       <li class="li"><code class="ph codeph">EXECUTE</code></li>
-                      <li class="li">???</li>
+                      <li class="li"></li> 
                     </ul>
                   </div>
                 </td>
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">search</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The search string used to locate this Task run. ???</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The search string used to locate this Task run.</td> 
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">limits</code></td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string ???</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">???</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td> 
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7"></td> 
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">class_id</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The ID of the class that ???</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The identifier of the Pipeline instance.</td>
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">has_lints</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">Boolean</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">If <code class="ph codeph">true</code>, ???</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7"></td>
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">q_threshold_time</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The time when ???
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">
                   <p class="p"><span class="ph"><span class="ph">Format:</span> <a class="xref" href="https://www.w3.org/TR/NOTE-datetime" target="_blank" rel="external noopener">UTC</a></span></p>
                 </td>
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">control_plane_scheduling</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">array</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">An array of objects that contain ???</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7"></td>
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">suggest_uris</code></td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string ???</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">???</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td> 
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7"></td> 
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">cc_end_ms</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">integer</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">???, expressed in milliseconds.</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The end of the runtime on the JCC node, expressed in milliseconds.</td> 
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">task_status</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">array</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">???</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7"></td> 
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">cc_prepare_start_ms</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">integer</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">??? in milliseconds</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The time when the JCC node starts preparing the runtime, expressed in milliseconds</td>
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">phase_snode_id</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">???</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7"></td> 
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">duration_ms</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">integer</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">???, expressed in milliseconds.</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">, expressed in milliseconds.</td> 
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">parent_ruuid</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">Runtime ID of the (parent) Task that triggered this (child) Task.</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The runtime ID of the parent Pipeline.</td>
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">references</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">array</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">An array of objects that contain ???</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">
+                  The references to other SnapLogic Assets in the Task, including the following reference types:
+                  <ul class="ul">
+                    <li class="li"><code class="ph codeph">path</code>. The path to the referenced Asset.</li>
+                    <li class="li"><code class="ph codeph">pipe_origin</code>.  If applicable, the referenced parent Pipeline (indicated by pipe_exec or subpipeline).</li>
+                    <li class="li"><code class="ph codeph">time_updated</code>. The time of the most recent Asset update.</li>
+                    <li class="li"><code class="ph codeph">asset_type</code>. The type of Asset that is referenced.</li>
+                    <li class="li"><code class="ph codeph">snode_id</code>. The type of ID for the referenced SnapLogic Asset.</li>
+                  </ul>
+                </td>
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">do_start</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">Boolean</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">If <code class="ph codeph">true</code>, ???</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7"></td>
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">statistics</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">object</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">???</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7"></td> 
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">user_id</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">???</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The user who ran the Task.</td>
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">connect_pipeline_views</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">Boolean</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">If <code class="ph codeph">true</code>, ???</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7"></td>
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">container_type</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
@@ -868,13 +752,11 @@
                   <div class="p"><span class="ph">Possible values:</span>
                     <ul class="ul">
                       <li class="li"><code class="ph codeph">regular</code></li>
-                      <li class="li">???</li>
+                      <li class="li"></li> 
                     </ul>
                   </div>
                 </td>
               </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">priority</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">integer</td>
@@ -882,43 +764,6 @@
                   
                 </td>
               </tr>
-
-              
-              <tr class="row">
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">instance_fqid</code></td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The fully qualified ID of this Task instance.</td>
-              </tr>
-
-              
-              <tr class="row">
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">info_flag_list</code></td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">array</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">???</td>
-              </tr>
-
-              
-              <tr class="row">
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">runtime_path_id</code></td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">???</td>
-              </tr>
-
-              
-              <tr class="row">
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">lint_list</code></td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">array</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">???</td>
-              </tr>
-
-              
-              <tr class="row">
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">failure</code></td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string ???</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">???</td>
-              </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">state_log</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">array</td>
@@ -934,277 +779,231 @@
                   </div>
                 </td>
               </tr>
-
-              
               <tr class="row">
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">ruuid</code></td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The Runtime ID of the Task run.</td>
-              </tr>
-
-              
-              <tr class="row">
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">parent_pipeline_fqid</code></td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The fully qualified ID of the (parent) Pipeline that triggered this Task run.</td>
-              </tr>
-
-              
-              <tr class="row">
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">execution_timeout</code></td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string ???</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">???</td>
-              </tr>
-
-              
-              <tr class="row">
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">path_id</code></td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">???</td>
-              </tr>
-
-              
-              <tr class="row">
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">plex_snode_id</code></td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">???</td>
-              </tr>
-
-              
-              <tr class="row">
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">error</code></td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">artifact_snap_id_map</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">object</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">If errors occurred, an object containing metadata about the errors.</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7"></td> 
               </tr>
-
-              
               <tr class="row">
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">plex_path</code></td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The path to the Snaplex where the Task ran. ???</td>
-              </tr>
-
-              
-              <tr class="row">
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">invoker_snode_id</code></td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The ID of the Snaplex node where the parent or invoker is located.</td>
-              </tr>
-
-              
-              <tr class="row">
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">invoker_path_id</code></td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">???</td>
-              </tr>
-
-              
-              <tr class="row">
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">snaplex_label</code></td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The label or name of the Snaplex where the Task ran.</td>
-              </tr>
-
-              
-              <tr class="row">
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">platform_globals</code></td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">artifacts_map</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">object</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">???
-                  <ul class="ul">
-                    <li class="li"><code class="ph codeph">task</code> contains the datetimes when the Task run started and ended.</li>
-                    <li class="li">???</li>
-                  </ul>
-                </td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7"></td> 
               </tr>
-
-              
               <tr class="row">
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">init_xid</code></td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">???</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">captured_env_map</code></td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">object</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7"></td> 
               </tr>
-
-              
-              <tr class="row">
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">nested_pipeline</code></td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">Boolean</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">If <code class="ph codeph">true</code>, the Task run is for a nested Pipeline and was triggered by the Task running the parent Pipeline. ???</td>
-              </tr>
-
-              
-              <tr class="row">
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">project_snode_id</code></td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The ID of the Snaplex node where the project is located.</td>
-              </tr>
-
-              
-              <tr class="row">
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">class_version</code></td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The version of the class that ???</td>
-              </tr>
-
-              
-              <tr class="row">
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">warning_list</code></td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">array</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">If the Task run generated warnings, an array of objects containing metadata about the warnings.</td>
-              </tr>
-
-              
-              <tr class="row">
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">root_ruuid</code></td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The ID of the root Task instance, if this Task is a descendant.</td>
-              </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">cc_start_ms</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">integer</td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The length of time since the Snaplex node was started, expressed in milliseconds.</td>
               </tr>
-
-              
               <tr class="row">
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">poll_time_stamp</code></td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">???
-                  <p class="p"><span class="ph"><span class="ph">Format:</span> <a class="xref" href="https://www.w3.org/TR/NOTE-datetime" target="_blank" rel="external noopener">UTC</a></span></p>
-                </td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">cc_stop_ms</code></td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">integer</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">, expressed in milliseconds.</td> 
               </tr>
-
-              
-              <tr class="row">
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">artifacts_map</code></td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">object</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">???</td>
-              </tr>
-
-              
-              <tr class="row">
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">artifact_snap_id_map</code></td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">object</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">???</td>
-              </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">ccid</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The ID of the Snaplex node where the Task ran.</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The ID of the JCC node instance.</td>
               </tr>
-
-              
               <tr class="row">
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">delivery_options</code></td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">object</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">???</td>
-              </tr>
-
-              
-              <tr class="row">
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">metrics</code></td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">object</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">Information about ???.
-                  <ul class="ul">
-                    <li class="li"><code class="ph codeph">queuedCount</code> – The number of ??? waiting in the queue.</li>
-                    <li class="li"><code class="ph codeph">totalSnapDelay</code> – The total number of milliseconds that Snaps within the Task run were delayed. ???</li>
-                    <li class="li"><code class="ph codeph">idleTime</code> – expressed in milliseconds.</li>
-                    <li class="li"><code class="ph codeph">memoryOverhead</code> – ???</li>
-                    <li class="li"><code class="ph codeph">inFlightCount</code> – The number of ???</li>
-                    <li class="li"><code class="ph codeph">startTime</code> – The number of milliseconds since ??? started.</li>
-                  </ul>
-                </td>
-              </tr>
-
-              
-              <tr class="row">
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">expire_time</code></td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">class_version</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">When the Task run expires. ???
-                  <p class="p"><span class="ph"><span class="ph">Format:</span> <a class="xref" href="https://www.w3.org/TR/NOTE-datetime" target="_blank" rel="external noopener">UTC</a></span></p>
-                </td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The version of the Snap Pack.</td> 
               </tr>
-
-              
-              <tr class="row">
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">runtime_label</code></td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">???</td>
-              </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">close_reason</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">Reason for closing the Task.</td>
               </tr>
-
-              
               <tr class="row">
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">cc_stop_ms</code></td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">integer</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">???, expressed in milliseconds.</td>
-              </tr>
-
-              
-              <tr class="row">
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">root_path</code></td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">???</td>
-              </tr>
-
-              
-              <tr class="row">
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">invoker_name</code></td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">???</td>
-              </tr>
-
-              
-              <tr class="row">
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">error_fp_list</code></td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">array</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">???</td>
-              </tr>
-
-              
-              <tr class="row">
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">flags</code></td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">delivery_options</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">object</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">???</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">Delivery options set on a child Pipeline.</td> 
               </tr>
-
-              
-              <tr class="row">
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">captured_env_map</code></td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">object</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">???</td>
-              </tr>
-
-              
-              <tr class="row">
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">llfeed_context</code></td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">object</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">???</td>
-              </tr>
-
-              
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">documents_count</code></td>
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">integer</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">???</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The number of documents processed by the Task.</td>
               </tr>
-
-              
+              <tr class="row">
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">error</code></td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">object</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">If errors occurred, an object containing metadata about the errors.</td>
+              </tr>
+              <tr class="row">
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">error_fp_list</code></td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">array</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7"></td> 
+              </tr>
+              <tr class="row">
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">execution_timeout</code></td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td> 
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7"></td> 
+              </tr>
+              <tr class="row">
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">expire_time</code></td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">When the Task run expires. 
+                  <p class="p"><span class="ph"><span class="ph">Format:</span> <a class="xref" href="https://www.w3.org/TR/NOTE-datetime" target="_blank" rel="external noopener">UTC</a></span></p>
+                </td>
+              </tr>
+              <tr class="row">
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">failure</code></td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">Boolean</td> 
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">Indicates if a failure occurred during document processing.</td>
+              </tr>
+              <tr class="row">
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">flags</code></td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">object</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7"></td> 
+              </tr>
+              <tr class="row">
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">info_flag_list</code></td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">array</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7"></td> 
+              </tr>
+              <tr class="row">
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">init_xid</code></td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7"></td> 
+              </tr>
+              <tr class="row">
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">instance_fqid</code></td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The fully qualified ID of this Task instance.</td>
+              </tr>
+              <tr class="row">
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">invoker_name</code></td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7"></td> 
+              </tr>
+              <tr class="row">
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">invoker_path_id</code></td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7"></td> 
+              </tr>
+              <tr class="row">
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">invoker_snode_id</code></td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The ID of the Snaplex node where the parent or invoker is located.</td>
+              </tr>
+              <tr class="row">
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">lint_list</code></td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">array</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7"></td> 
+              </tr>
+              <tr class="row">
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">llfeed_context</code></td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">object</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7"></td> 
+              </tr>
+              <tr class="row">
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">metrics</code></td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">object</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">
+                  <ul class="ul">
+                    <li class="li"><code class="ph codeph">queuedCount</code></li>
+                    <li class="li"><code class="ph codeph">totalSnapDelay</code> – The total number of milliseconds that Snaps within the Task run were delayed.</li> 
+                    <li class="li"><code class="ph codeph">idleTime</code></li>
+                    <li class="li"><code class="ph codeph">memoryOverhead</code></li> 
+                    <li class="li"><code class="ph codeph">inFlightCount</code> </li>
+                    <li class="li"><code class="ph codeph">startTime</code> </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr class="row">
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">nested_pipeline</code></td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">Boolean</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">If <code class="ph codeph">true</code>, the Task run is for a nested Pipeline and was triggered by the Task running the parent Pipeline.</td> 
+              </tr>
+              <tr class="row">
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">parent_pipeline_fqid</code></td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The fully qualified ID of the (parent) Pipeline that triggered this (child) Task run.</td>
+              </tr>
+              <tr class="row">
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">path_id</code></td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7"></td>
+              </tr>
+              <tr class="row">
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">platform_globals</code></td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">object</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7"> 
+                  <ul class="ul">
+                    <li class="li"><code class="ph codeph">task</code> contains the datetimes when the Task run started and ended.</li>
+                    <li class="li"></li> 
+                  </ul>
+                </td>
+              </tr>
+              <tr class="row">
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">plex_path</code></td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The path to the Snaplex.</td>
+              </tr>
+              <tr class="row">
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">plex_snode_id</code></td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7"></td> 
+              </tr>
+              <tr class="row">
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">poll_time_stamp</code></td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The time when the SnapLogic Control Plane received the Task from the JCC node.
+                  <p class="p"><span class="ph"><span class="ph">Format:</span> <a class="xref" href="https://www.w3.org/TR/NOTE-datetime" target="_blank" rel="external noopener">UTC</a></span></p>
+                </td>
+              </tr>
+              <tr class="row">
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">project_snode_id</code></td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The ID of the Snaplex node where the project of the Pipeline is located.</td>
+              </tr>
               <tr class="row">
                 <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">resolution</code></td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string ???</td>
-                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">???</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td> 
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The suggested action to take when the runtime fails.</td>
               </tr>
-
+              <tr class="row">
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">root_path</code></td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7"></td> 
+              </tr>
+              <tr class="row">
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">root_ruuid</code></td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The ID of the root Task instance, if this Task is a descendant.</td>
+              </tr>
+              <tr class="row">
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">runtime_label</code></td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The name of the Snaplex.</td>
+              </tr>
+              <tr class="row">
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">runtime_path_id</code></td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The identifier of the Snaplex.
+                  <span class="ph">Format:</span> {subscriber_id}/{plex_environment}/{plex_location}
+                </td>
+              </tr>
+              <tr class="row">
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">ruuid</code></td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The Runtime ID of the Task run.</td>
+              </tr>
+              <tr class="row">
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">snaplex_label</code></td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">string</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">The name of the Snaplex and the label of the JCC node where the Task ran.</td>
+              </tr>
+              <tr class="row">
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__5"><code class="ph codeph">warning_list</code></td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__6">array</td>
+                <td class="entry" headers="get-runtime-org-ruuid__section-api-response__entry__7">If the Task run generated warnings, an array of objects containing metadata about the warnings.</td>
+              </tr>
             </tbody></table>
 
       </div>
